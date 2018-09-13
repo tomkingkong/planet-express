@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const profile = ({ history }) => {
   return (
@@ -7,3 +8,9 @@ export const profile = ({ history }) => {
     </div>
   )
 }
+
+
+const { object } = PropTypes;
+profile.propTypes = {
+  history: object
+} 
