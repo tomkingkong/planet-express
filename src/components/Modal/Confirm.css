@@ -1,0 +1,25 @@
+.Confirm {
+  background: #4e6a76f5;
+  border: 0.05rem solid rgba(220, 245, 254, 0.728);
+  border-radius: 0.25rem;
+  position: absolute;
+  width: 15rem;
+  padding: 1rem;
+  margin: 0 auto;
+  z-index: 9999; }
+  .Confirm .confirm__options {
+    display: flex;
+    justify-content: space-around; }
+  .Confirm .confirm__no,
+  .Confirm .confirm__yes {
+    border: none;
+    background: transparent;
+    font-size: 80%; }
+  .Confirm .confirm__no:hover,
+  .Confirm .confirm__yes:hover {
+    font-size: 80%;
+    color: white; }
+  .Confirm .confirm__header {
+    color: white;
+    margin: 0 0 1rem 0;
+    text-align: center; }
