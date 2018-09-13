@@ -1,0 +1,58 @@
+.Encounter {
+  padding: 1rem;
+  position: relative;
+  height: calc(100vh - 65px);
+}
+
+.encounter__img {
+  border: 0.4rem outset rgba(224, 246, 255, 0.988);
+  border-radius: 1rem;
+  box-shadow: inset 0rem  0rem 1rem 0.4rem rgba(255, 255, 255, 0.386);
+  background-size: cover;
+  margin: 0rem auto;
+  height: 15rem;
+  width: 100%;
+}
+
+.encounter__title {
+  color: white;
+  background: rgba(0, 0, 0, 0.297);
+  box-shadow: 0rem 0.1rem 0.2rem 0.05rem rgba(105, 120, 128, 0.365);
+  border-radius: 0.25rem;
+  font-size: 90%;
+  text-align: left;
+  overflow: scroll;
+  padding: 0.8rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.encounter__desc {
+  color: white;
+  background: rgba(0, 0, 0, 0.297);
+  border-top: 0.5rem double rgba(248, 254, 255, 0.516);
+  font-size: 90%;
+  text-align: justify;
+  overflow: scroll;
+  padding: 1rem;
+  height: calc(40vh - 5.5rem);
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.continue__btn {
+  color: white;
+  cursor: pointer;
+  background: rgba(174, 180, 182, 0.639);
+  border: none;
+  box-shadow: 0rem 0rem 0.9rem 0.01rem rgb(218, 215, 215);
+  font-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+}
+.continue__btn:hover {
+  color: rgba(214, 219, 223, 0.639);
+  background: rgba(86, 89, 91, 0.639);
+  box-shadow: 0rem 0rem 0.9rem 0.01rem rgb(86, 89, 91);
+}
