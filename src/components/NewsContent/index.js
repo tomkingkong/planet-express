@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './News.css';
+
 export const NewsContent = ({
   description, 
   publishedAt, 
@@ -8,18 +10,27 @@ export const NewsContent = ({
   author, 
   title, 
   url }) => {
+  const imageBackground = {'backgroundImage': `url(${urlToImage})`};
   return (
-    <article className="news">
-     <img src={urlToImage} alt={title}/>
-      <h4>{title}</h4>
-      <p>{description}</p>
-      <p>{author}</p>
-      <a href={url} target="_blank">Link to Article</a>
-      <p>{publishedAt}</p>
+    <article className="news__article">
+      <div className="news__img" style={imageBackground} />
+      <div className="news__info">
+        <h4 className="news__title">{title}</h4>
+        <p className="news__desc">{description}</p>
+        <p className="news__auth">Author: {author}</p>
+        <a className="news__link" href={url} target="_blank">Link to Article</a>
+        <p className="news__publish">{publishedAt}</p>
+      </div>
     </article>
   )
 }
 
+const { string } = PropTypes;
 NewsContent.propTypes = {
-  news: PropTypes.object
-}
+  description: string, 
+  publishedAt: string, 
+  urlToImage: string, 
+  author: string, 
+  title: string, 
+  url: string
+} 
