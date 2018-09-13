@@ -1,0 +1,42 @@
+.Arrival {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 90vh;
+  height: 100%;
+  width: 100%; }
+  .Arrival .arrival__title {
+    color: white;
+    margin: 1rem 0;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    z-index: 99999; }
+
+.retire_btn {
+  color: white;
+  cursor: pointer;
+  background: rgba(174, 180, 182, 0.639);
+  border: none;
+  box-shadow: 0rem 0rem 0.9rem 0.01rem #dad7d7;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 200%;
+  width: 100%;
+  padding: 0.5rem; }
+
+.retire_btn:hover {
+  color: rgba(214, 219, 223, 0.639);
+  background: rgba(86, 89, 91, 0.639);
+  box-shadow: 0rem 0rem 0.9rem 0.01rem #56595b; }
+
+.space {
+  background: url("/images/sky_star2.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0; }
