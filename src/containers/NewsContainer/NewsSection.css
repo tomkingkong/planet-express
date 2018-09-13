@@ -1,0 +1,13 @@
+.news_container {
+  position: relative;
+  overflow: scroll;
+  height: calc(100vh - 65px); }
+  .news_container .news__section__title {
+    color: #f4f3f2;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: lighten;
+    position: sticky;
+    top: 0;
+    margin: 0.8rem 0;
+    padding: 0.5rem;
+    text-align: center; }
