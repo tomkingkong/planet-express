@@ -1,0 +1,14 @@
+.Technologies {
+  position: relative;
+  margin: 0 auto;
+  overflow: scroll;
+  height: calc(100vh - 65px);
+  width: 100%; }
+  .Technologies .technologies__title {
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem; }
