@@ -1,10 +1,15 @@
 import { combineReducers } from 'redux';
-import { exoplanets } from './exoplanets';
+
 import { technologies } from './technologies';
+import { spaceEvents } from './spaceEvents';
+import { exoplanets } from './exoplanets';
+import { journey } from './journey';
 import { news } from './news';
 
 export const rootReducer = combineReducers({
-  exoplanets,
   technologies,
+  spaceEvents,
+  exoplanets,
+  journey,
   news
 })
