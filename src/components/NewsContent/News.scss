@@ -1,0 +1,44 @@
+.news__article {
+  background: rgba(255, 255, 255, 0.187);
+  background-blend-mode: lighten;
+  border-radius: 0.2rem;
+  height: auto;
+  padding-bottom: 0.5rem;
+  margin: 0.5rem auto;
+  .news__img {
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+  }
+  .news__info {
+    padding: 0 1rem 0 1rem;
+    margin: 0 auto;
+  }
+  .news__title {
+    color: rgb(226, 228, 230);
+    background: rgba(51, 54, 60, 0.427);
+    background-blend-mode: lighten;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  .news__desc,
+  .news__auth {
+    margin: 0.5rem 0;
+  }
+
+  .news__link {
+    color: rgb(157, 157, 20);
+    background: rgba(14, 26, 92, 0.714);
+    border-radius: 5rem;
+    font-size: 80%;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+  }
+  .news__publish {
+  
+  }
+}
