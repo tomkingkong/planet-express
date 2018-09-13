@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
+import './Technologies.css';
 import { TechnologyContent } from '../../components/TechnologyContent';
 
 export class TechnologiesContainer extends Component {
@@ -13,16 +14,18 @@ export class TechnologiesContainer extends Component {
 
   render() {
     return (
-      <div className="technologies">
+      <div className="Technologies">
+        <h1 className="technologies__title">SpaceLab</h1>
         {this.displayTechnologies()}
       </div>
     )
   }
 }
 
+const { array } = PropTypes;
 TechnologiesContainer.propTypes = {
-  technologies: PropTypes.array
-}
+  technologies: array
+};
 
 export const mapStateToProps = ({ technologies }) => ({ technologies });
 
