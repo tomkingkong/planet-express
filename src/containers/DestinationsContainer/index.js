@@ -2,30 +2,41 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { DestinationContent } from '../../components/DestinationContent';
+import './Destinations.css';
+import PlanetContainer from '../PlanetContainer';
 
 export class Destinations extends Component {
-
   displayExoplanets = () => {
-    const { exoplanets } = this.props;
-    return exoplanets.map((planet, i) => <DestinationContent {...planet} key={i} />);
+    const { exoplanets, history } = this.props;
+    return exoplanets.map((planet, i) => (
+      <PlanetContainer 
+        key={i} 
+        planet={planet} 
+        history={history} 
+      />
+    ));
   }
 
   render() {
     return (
-      <div className="destinations">
+      <div className="Destinations">
+        <h4 className="dest__title">Destinations</h4>
+        <section className="dest__locations">
         {this.displayExoplanets()}
+        </section>
       </div>
     )
   }
 }
 
+const { array, func } = PropTypes;
 Destinations.propTypes = {
-  exoplanets: PropTypes.array
-}
+  exoplanets: array,
+  createJourney: func, 
+  spaceEvents: array
+};
 
 export const mapStateToProps = ({ exoplanets }) => ({ exoplanets });
-// export const mapDispatchToProps = (dispatch) => ({});
 
 export default connect(mapStateToProps, null)(Destinations);
 
