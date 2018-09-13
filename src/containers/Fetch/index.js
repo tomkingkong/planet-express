@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { 
+  importTechnologies,
   importScienceNews, 
-  importExoplanets, 
-  importTechnologies } from '../../thunks';
+  importSpaceEvents,
+  importExoplanets } from '../../thunks';
 
 export class Fetch extends Component {
   async componentDidMount() {
     const { 
       news, 
-      technologies, 
       exoplanets, 
+      spaceEvents,
+      technologies, 
+      importExoplanets,
+      importSpaceEvents, 
       importScienceNews, 
-      importExoplanets, 
       importTechnologies } = this.props;
     if (news.length < 1) await importScienceNews();
     if (exoplanets.length < 1) await importExoplanets();
+    if (spaceEvents.length < 1) await importSpaceEvents();
     if (technologies.length < 1) await importTechnologies();
   }
   render() {
@@ -23,11 +27,23 @@ export class Fetch extends Component {
   }
 }
 
-export const mapStateToProps = ({ news, technologies, exoplanets }) => ({ news, technologies, exoplanets });
+export const mapStateToProps = ({ 
+  news, 
+  exoplanets, 
+  spaceEvents, 
+  technologies 
+}) => ({ 
+  news, 
+  exoplanets, 
+  spaceEvents, 
+  technologies 
+});
+
 export const mapDispatchToProps = (dispatch) => ({
+  importTechnologies: () => dispatch(importTechnologies()),
   importScienceNews: () => dispatch(importScienceNews()),
-  importExoplanets: () => dispatch(importExoplanets()),
-  importTechnologies: () => dispatch(importTechnologies())
-})
+  importSpaceEvents: () => dispatch(importSpaceEvents()),
+  importExoplanets: () => dispatch(importExoplanets())
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Fetch);
