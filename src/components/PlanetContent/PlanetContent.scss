@@ -1,0 +1,70 @@
+.PlanetContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+}
+
+.planet__info {
+  width: 90%;
+  margin: 0 auto;
+  h4 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 140%;
+    text-align: center;
+  }
+}
+
+.planet__icon {
+  background-repeat: repeat-x;
+  background-size: 210%;
+  background-position: center;
+  border-radius: 100%;
+  box-shadow: inset 0rem 0rem 0.5rem 0.01rem rgba(33, 33, 33, 0.81);
+  overflow: hidden;
+  height: 10rem;
+  width: 10rem;
+  transform: rotate(-8deg);
+  -webkit-animation: slide 15s linear infinite, zooming 5s ease-in-out;
+  animation: slide 15s linear infinite, zooming 5s ease-in-out;
+}
+
+@-webkit-keyframes zooming {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zooming {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+@-webkit-keyframes slide {
+  from{
+    background-position: -7rem;
+  }
+  to{
+    background-position: 6.78rem;
+  }
+}
+
+@keyframes slide {
+  from{
+    background-position: -7rem;
+  }
+  to{
+    background-position: 6.78rem;
+  }
+}
