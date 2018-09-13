@@ -1,7 +1,21 @@
 import $ from "jquery";
 
 export const exoplanetCleaner = (planets) => {
+  const planetImages = [
+    'exoplanet_blue_1.png', 
+    'exoplanet_blue_2.jpg', 
+    'exoplanet_icy_1.png', 
+    'exoplanet_rocky_1.png',
+    'exoplanet_rocky_2.jpg'
+  ]
+
   return planets.map(planet => {
+    let numInSystem = planet.pl_pnum;
+    if (numInSystem > 4) { numInSystem = numInSystem+'th' } else
+    if (numInSystem === 3) { numInSystem = numInSystem+'rd' } else
+    if (numInSystem === 2) { numInSystem = numInSystem+'nd' } else
+    if (numInSystem === 1) { numInSystem = numInSystem+'st' }
+    
     const planetImage = planetImages[(Math.random()*planetImages.length-1)+0.5<<0];
     return {
       name: planet.pl_name,
@@ -22,14 +36,14 @@ export const techCleaner = (technologies) => {
   return technologies.map(tech => {
     const { project } = tech;
     const technologyAreas = project.primaryTas.technologyAreas || [];
-    const techTags = technologyAreas.map(tech => tech.name.split(/(\band\b\,)+g/));
+    const techTags = technologyAreas.map(tech => tech.name.split(/(\band\b,)+g/));
     return {
       title: project.title,
-      status: project.status,
-      org: project.leadOrganization.name,
-      discoveryMethod: project.pl_discmethod,
+      status: project.status || 'unknown',
+      org: project.leadOrganization.name || 'unknown',
+      discoveryMethod: project.pl_discmethod || 'unknown',
       techAreas: [].concat($.unique([techTags.join(',')])),
-      director: project.programDirectors.programDirector,
+      // director: project.programDirectors.programDirector || 'unknown',
       benefits: $.parseHTML(project.benefits)[0].innerText,
       description: $.parseHTML(project.description)[0].innerText
     }
