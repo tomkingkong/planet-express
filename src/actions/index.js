@@ -18,3 +18,8 @@ export const populateNews = (news) => ({
   news
 })
 
+export const setJourney = (journey) => ({
+  type: 'SET_JOURNEY',
+  journey
+})
+
