@@ -8,7 +8,7 @@ import { Footer } from '../Footer';
 export const NavRoute = () => {
   return (
     <div>
-      <Route path="/" render={({ location }) => (location.pathname !== '/profile') && <Footer />} />
+      <Route path="/" render={({ location, history }) => (location.pathname !== '/profile') && <Footer history={history}  />} />
       <Route exact path='/' component={PreLaunchNav} />
       <Route exact path='/ISS' component={SpaceStationNav} />
     </div>
