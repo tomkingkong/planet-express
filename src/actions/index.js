@@ -3,6 +3,11 @@ export const populateExoplanets = (exoplanets) => ({
   exoplanets
 });
 
+export const populateSpaceEvents = (spaceEvents) => ({
+  type: 'POPULATE_SPACE_EVENTS',
+  spaceEvents
+})
+
 export const populateTechnologies = (technologies) => ({
   type: 'POPULATE_TECHNOLOGIES',
   technologies
