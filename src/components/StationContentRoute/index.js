@@ -7,8 +7,8 @@ import TechnologiesContainer from '../../containers/TechnologiesContainer';
 export const StationContentRoute = () => {
   return (
     <Switch>
-      <Route exact path="/ISS/destinations" component={DestinationsContainer} />
-      <Route exact path="/ISS/store" component={TechnologiesContainer} />
+      <Route path="/ISS/destinations" component={DestinationsContainer} />
+      <Route path="/ISS/store" component={TechnologiesContainer} />
     </Switch>
   )
 }
