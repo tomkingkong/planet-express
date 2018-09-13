@@ -1,31 +1,38 @@
 import { Nasa_Key, News_key } from '../api/key';
+import { API } from '../api/API';
 
-export const fetchCurry = (originUrl) => (content) => (options) => (method='') => (header) => async (...paths) => {  
+export const fetchCurry = (originUrl) => async (...paths) => {  
   const url = originUrl + paths.join('');
-  const body = JSON.stringify(content) || {};
-  const headers = header || {'Content-Type': 'application/json'};
-  const dataPayload =  options || { method, body, headers };
-  
   try {
-    const response = await fetch(url, dataPayload);
+    const response = await fetch(url);
     return await response.json();
   } catch (error) {
     return error;
   }
 };
 
-const API = {
-  exoplanets: 'https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?',
-  nasaTech: 'https://techport.nasa.gov/api/projects',
-  scienceNews: 'https://newsapi.org/v2/top-headlines?category=science&country=us&apiKey='
-}
+const { hubble, nasaTech, scienceNews, exoplanets } = API;
+
+export const fetchSpaceEvents = () => fetchCurry(hubble)('images/');
+export const fetchSpaceEvent = (id) => fetchCurry(hubble)('image/', id);
+
+export const fetchTechnologies = () => fetchCurry(nasaTech)(Nasa_Key);
+export const fetchTechnology = (id) => fetchCurry(nasaTech)('/', id, Nasa_Key);
+
+export const fetchScienceNews = () => fetchCurry(scienceNews)(News_key);
+
+export const fetchPlanets = () => fetchCurry(exoplanets)(Nasa_Key,'&table=exoplanets', '&format=json');
+
 
 /*
- ** Add '&format=json' to ensure json return
-exoplanets:  requires table query( 'table=exoplanets' )
+**** FETCH INFO ****
+** use '&format=json' to ensure json return
+- exoplanets:  requires table query('table=exoplanets')
+
+** Hubble: queries
+- glossary/ (returns all glossary terms + info)
+- glossary/:term (return info on term)
+- news/ (returns ids)
+- news_release/:id (return info on news article)
 */
 
-export const fetchScienceNews = () => fetchCurry(API.scienceNews)()({})()()(News_key);
-export const fetchPlanets = () => fetchCurry(API.exoplanets)()({})()()('table=exoplanets','&format=json');
-export const fetchTechnologies = () => fetchCurry(API.nasaTech)()({})()()(Nasa_Key);
-export const fetchTechnology = (id) => fetchCurry(API.nasaTech)()({})()()('/', id, Nasa_Key);
