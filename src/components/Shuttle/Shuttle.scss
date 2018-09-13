@@ -1,0 +1,45 @@
+.Shuttle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  margin: 1rem auto;
+  width: 100%;
+  .continue_btn {
+    color: white;
+    cursor: pointer;
+    background: rgba(174, 180, 182, 0.639);
+    border: none;
+    box-shadow: 0rem 0rem 0.9rem 0.01rem rgb(218, 215, 215);
+    font-size: 200%;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .continue_btn:hover {
+    color: rgba(214, 219, 223, 0.639);
+    background: rgba(86, 89, 91, 0.639);
+    box-shadow: 0rem 0rem 0.9rem 0.01rem rgb(86, 89, 91);
+  }
+}
+
+.shuttle__launch_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.1rem inset rgb(247, 253, 255);
+  border-radius: 0.2rem;
+  width: 96%;
+  height: 14rem;
+  margin: 0 auto;
+}
+
+.shuttle__info {
+  color: white;
+  background: rgba(0, 0, 0, 0.42);
+  border-radius: 0.2rem;
+  width: 96%;
+  padding: 1rem;
+  margin: 1rem auto;
+  h4 {
+    margin: 0;
+  }
+}
