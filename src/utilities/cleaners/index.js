@@ -2,28 +2,13 @@ import $ from "jquery";
 
 export const exoplanetCleaner = (planets) => {
   return planets.map(planet => {
-    let placeInSystem = planet.numInSystem;
-    switch(placeInSystem) {
-      case placeInSystem > 4:
-      placeInSystem + 'th'; 
-      break;
-      case placeInSystem === 3:
-      placeInSystem + 'rd'; 
-      break;
-      case placeInSystem === 2:
-      placeInSystem + 'nd'; 
-      break;
-      case placeInSystem === 1:
-      placeInSystem + 'st'; 
-      break;
-      default:
-      break;
-    }
+    const planetImage = planetImages[(Math.random()*planetImages.length-1)+0.5<<0];
     return {
       name: planet.pl_name,
       mass: planet.pl_bmassj,
+      image: `/images/alternative/${planetImage}`,
       distance: planet.st_dist,
-      numInSystem: placeInSystem,
+      numInSystem: numInSystem,
       yearLength: planet.pl_orbper,
       hostStar: planet.pl_hostname,
       numMoons: planet.pl_mnum || 0,
