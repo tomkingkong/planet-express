@@ -1,12 +1,16 @@
 import { 
+  populateTechnologies,
+  populateSpaceEvents, 
   populateExoplanets, 
-  populateTechnologies, 
-  populateNews } from '../actions';
+  populateNews, 
+  setJourney } from '../actions';
 import { 
-  fetchPlanets, 
   fetchTechnologies, 
-  fetchTechnology, 
-  fetchScienceNews } from '../utilities/fetches';
+  fetchScienceNews,
+  fetchSpaceEvents, 
+  fetchTechnology,
+  fetchSpaceEvent,
+  fetchPlanets } from '../utilities/fetches';
 import { 
   exoplanetCleaner, 
   techCleaner } from '../utilities/cleaners/';
@@ -19,7 +23,7 @@ export const importExoplanets = () => {
       const cleanPlanets = exoplanetCleaner(limitPlanets);
       dispatch(populateExoplanets(cleanPlanets));
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
 }
@@ -29,11 +33,13 @@ export const importTechnologies = () => {
     try {
       const technologies = await fetchTechnologies();
       const limitTechnologies = technologies.projects.projects.slice(0, 10);
-      const dirtyTechs = await Promise.all(limitTechnologies.map(tech => fetchTechnology(tech.id)));
+      const dirtyTechs = await Promise.all(limitTechnologies
+        .map(tech => fetchTechnology(tech.id)));
+
       const cleanTechs = techCleaner(dirtyTechs);
       dispatch(populateTechnologies(cleanTechs));
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
 }
@@ -42,11 +48,38 @@ export const importScienceNews = () => {
   return async (dispatch) => {
     try {
       const scienceNews = await fetchScienceNews();
-      const newswithImages = await scienceNews.articles.filter(article => article.urlToImage)
+      const newswithImages = await scienceNews.articles
+      .filter(article => article.urlToImage);
+
       const limitNews = newswithImages.slice(3, 9);
       dispatch(populateNews(limitNews));
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
+  }
+}
+
+export const importSpaceEvents = () => {
+  return async (dispatch) => {
+    try {
+      const fetchEvents = await fetchSpaceEvents();
+      const spaceEvents = await Promise.all(fetchEvents
+        .map( async event => { 
+          const eventData = await fetchSpaceEvent(event.id);
+          return {...eventData, id:event.id}
+        }));
+
+      dispatch(populateSpaceEvents(spaceEvents));
+    } catch (error) {
+      console.log(error);
+    }
+  }
+}
+
+export const createJourney = (events, planetId) => {
+  return dispatch => {
+    const encounters = events.slice(14, 18).map(event => event.id);
+    const journey = { planetId, encounters };
+    dispatch(setJourney(journey));
   }
 }
