@@ -164,3 +164,10 @@ describe('Fetch Container', () => {
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
     });
 
+    it('should call dispatch with importSpaceEvents when it is called', () => {
+      const mockDispatch = jest.fn();
+      const actionToDispatch = importSpaceEvents();
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.importSpaceEvents();
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
