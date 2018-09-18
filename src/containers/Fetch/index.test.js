@@ -117,3 +117,11 @@ describe('Fetch Container', () => {
     await wrapper.instance().componentDidMount();
     expect(mockFn).not.toHaveBeenCalled();
   });
+
+  it('importSpaceEvents should not be called if spaceEvents array has length', async () => {
+    const mockFn = jest.fn();
+    const wrapper = shallow(<Fetch {...props} importSpaceEvents={mockFn}/>);
+    await wrapper.instance().componentDidMount();
+    expect(mockFn).not.toHaveBeenCalled();
+  });
+
