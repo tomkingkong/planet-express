@@ -60,3 +60,16 @@ describe('fetchTechnologies', () => {
   });
 });
 
+describe('fetchTechnology', () => {
+  it('should fetch a single technology through nasaTech url', async () => {
+    const mockUrl = API.nasaTech;
+    const mockId = 12;
+    const expected = [mockUrl + '/' + mockId + Nasa_Key];
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve( )
+    }));
+    await fetchTechnology(mockId);
+    expect(window.fetch).toHaveBeenCalledWith(...expected);
+  });
+});
