@@ -86,3 +86,17 @@ describe('fetchScienceNews', () => {
     expect(window.fetch).toHaveBeenCalledWith(...expected);
   });
 });
+
+describe('fetchPlanets', () => {
+  it('should fetch an array of exoplanets through NASA exoplanets url', async () => {
+    const mockUrl = API.exoplanets;
+    const expected = [mockUrl + Nasa_Key + '&table=exoplanets' + '&format=json'];
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve( )
+    }));
+    await fetchPlanets();
+    expect(window.fetch).toHaveBeenCalledWith(...expected);
+  });
+});
+
