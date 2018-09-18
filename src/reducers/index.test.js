@@ -20,3 +20,11 @@ import { news } from '../reducers/news';
       expect(results).toEqual(expected);
     });
   });
+
+  describe('spaceEvents reducer', () => {
+    it('should return the initial state', () => {
+      const expected = [];
+      const results = spaceEvents(undefined, {});
+      expect(results).toEqual(expected);
+    });
+
