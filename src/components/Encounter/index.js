@@ -1,15 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { string, array } from 'prop-types';
 
 import './Encounter.css';
 
-export const Encounter = ({
-  name, 
-  nextEvent,
-  description, 
-  image_files }) => {
-  const encounterImgStyle = {
-    backgroundImage: `url(${image_files[0].file_url})`
+export default class Encounter extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showInfo: false
+  }
   }
   return (
     <article className="Encounter">
