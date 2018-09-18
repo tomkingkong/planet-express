@@ -1,0 +1,44 @@
+.Destination {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.865);
+  background: #1d150b80;
+  border-radius: 10rem 1rem 1rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 8rem;
+  min-width: 100%;
+  margin: 0.2rem auto;
+  padding: 0.6rem; }
+
+.Destination:hover {
+  background: rgba(255, 255, 255, 0.187);
+  background-blend-mode: lighten; }
+
+.destination__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto; }
+  .destination__info h4 {
+    border: 0.05rem solid rgba(255, 255, 255, 0.66);
+    border-radius: 0.2rem;
+    font-size: 100%;
+    width: 8rem;
+    margin: 0 auto 0.4rem auto;
+    padding: 0.4rem;
+    text-align: center; }
+  .destination__info h5 {
+    font-size: 105%;
+    margin: 0.5rem 0; }
+  .destination__info p {
+    font-size: 65%;
+    margin: 0.2rem 0;
+    padding: 0; }
+
+.planet__icon {
+  filter: brightness(1);
+  min-height: 7rem;
+  min-width: 7rem; }
