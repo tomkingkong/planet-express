@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { func } from 'prop-types';
 
 import './Confirm.css';
 
@@ -16,7 +16,6 @@ export const Modal = ({ handleConfirm }) => {
   )
 }
 
-const { func } = PropTypes;
 Modal.propTypes = {
   handleConfirm: func
 } 
