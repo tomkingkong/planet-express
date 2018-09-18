@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 import './News.css';
 
@@ -25,7 +25,6 @@ export const NewsContent = ({
   )
 }
 
-const { string } = PropTypes;
 NewsContent.propTypes = {
   description: string, 
   publishedAt: string, 
