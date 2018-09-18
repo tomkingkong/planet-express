@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 
+import './App.css';
 import { PageContentRoute } from '../PageContentRoute';
 import { NavRoute } from '../NavRoute';
 import Fetch from '../../containers/Fetch';
