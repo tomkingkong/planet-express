@@ -44,3 +44,13 @@ import { news } from '../reducers/news';
       const results = exoplanets(undefined, {});
       expect(results).toEqual(expected);
     });
+
+    it('should return a state full of exoplanets', () => {
+      const initialState = [];
+      const mockPlanets = [{planet:1}];
+      const mockAction = {exoplanets: mockPlanets, type:'POPULATE_EXOPLANETS'}
+      const results = exoplanets(initialState, mockAction);
+      const expected = [{planet:1}];
+      expect(results).toEqual(expected);
+    });
+  });
