@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { object } from 'prop-types';
 
 import './Arrival.css';
 import { PlanetContent } from '../../components/PlanetContent';
@@ -13,12 +13,11 @@ export const Arrival = ({
         <div className="space">
           <PlanetContent {...destination} />
         </div>
-        <button className="retire_btn" onClick={() => history.replace('/')}>Retire</button>
+        <button className="retire_btn" onClick={() => history.replace('/')}>Click to return Home</button>
       </article>
     );
 }
 
-const { object } = PropTypes;
 Arrival.propTypes = {
   destination: object,
   history: object
