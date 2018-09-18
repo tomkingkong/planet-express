@@ -9,3 +9,13 @@ describe('NavRoute component', () => {
     const wrapper = shallow(<NavRoute />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should match snapshot with /profile path', () => {
+    const wrapper = shallow(<NavRoute location={{pathname: '/profile'}} />);
+    render(
+      <MemoryRouter initialEntries={['/profile']}>
+        <NavRoute location={{pathname: '/profile'}} />
+      </MemoryRouter>
+    )
+    expect(wrapper).toMatchSnapshot();
+  });
