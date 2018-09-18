@@ -69,3 +69,21 @@ describe('Fetch Container', () => {
     await wrapper.instance().componentDidMount();
     expect(mockFn).toHaveBeenCalled();
   });
+
+  it('importSpaceEvents should be called if spaceEvents array does not have length', async () => {
+    const mockFn = jest.fn();
+    props = {
+      exoplanets: [],
+      spaceEvents: [],
+      news: [],
+      technologies: [],
+      importTechnologies: jest.fn(),
+      importScienceNews: jest.fn(), 
+      importSpaceEvents: jest.fn(),
+      importExoplanets: jest.fn()
+    }
+    const wrapper = shallow(<Fetch {...props} importSpaceEvents={mockFn}/>);
+    await wrapper.instance().componentDidMount();
+    expect(mockFn).toHaveBeenCalled();
+  });
+
