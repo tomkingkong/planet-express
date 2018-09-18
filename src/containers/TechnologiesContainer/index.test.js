@@ -12,3 +12,19 @@ describe('TechnologiesContainer Container', () => {
     const wrapper = shallow(<TechnologiesContainer {...mockProps} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  describe('mapStateToProps', () => {
+    it('should be provided with a technologies array from props', () => {
+      const mockState = {
+        spaceEvents: [{}, {}],
+        technologies: [],
+        exoplanets: [],
+        journey: {},
+        news: []
+      }
+      const expected = { technologies: [] };
+      const results = mapStateToProps(mockState);
+      expect(results).toEqual(expected);
+    });
+  });
+});
