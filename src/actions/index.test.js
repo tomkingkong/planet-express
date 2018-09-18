@@ -21,3 +21,10 @@ import * as actions from '../actions';
       const expected = {type:'POPULATE_SPACE_EVENTS', spaceEvents:mockEvents};
       expect(results).toEqual(expected);
     });
+
+    it('should create an object with an news array and type POPULATE_TECHNOLOGIES', () =>{
+      const mockTech = [{ tech:1 }, { tech:2 }];
+      const results = actions.populateTechnologies(mockTech);
+      const expected = {type:'POPULATE_TECHNOLOGIES', technologies:mockTech};
+      expect(results).toEqual(expected);
+    });
