@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { object } from 'prop-types';
 
 import './Shuttle.css';
 
@@ -23,8 +23,6 @@ export const Shuttle = ({ history }) => {
   )
 }
 
-
-const { object } = PropTypes;
 Shuttle.propTypes = {
   history: object
 } 
