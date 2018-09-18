@@ -34,3 +34,10 @@ describe('Encounter component', () => {
     wrapper.instance().handleClick();    
     expect(wrapper.state().showInfo).toEqual(true);
   });
+
+  it('handleClick should toggle showInfo state to false if true', () => {
+    wrapper.instance().handleClick();
+    wrapper.instance().handleClick();
+    expect(wrapper.state().showInfo).toEqual(false);
+  });
+});
