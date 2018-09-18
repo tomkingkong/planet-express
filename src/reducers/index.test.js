@@ -28,3 +28,12 @@ import { news } from '../reducers/news';
       expect(results).toEqual(expected);
     });
 
+    it('should return a state full of spaceEvents', () => {
+      const initialState = [];
+      const mockEevent = [{event:1}];
+      const mockAction = {spaceEvents: mockEevent, type:'POPULATE_SPACE_EVENTS'}
+      const results = spaceEvents(initialState, mockAction);
+      const expected = [{event:1}];
+      expect(results).toEqual(expected);
+    });
+  });
