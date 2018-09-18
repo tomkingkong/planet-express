@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import { object, array } from 'prop-types';
 
-import { Encounter } from '../../components/Encounter';
+import './JourneyRoute.css';
+import { arrivalAnimate, startAtBottom } from '../../utilities/ScrollAnimate';
+import Encounter from '../../components/Encounter';
 import { Arrival } from '../../components/Arrival';
 
 export class JourneyRoute extends Component {
@@ -19,11 +21,13 @@ export class JourneyRoute extends Component {
   }
 
   render() {
-    const { exoplanets, journey, spaceEvents } = this.props;
+    const { exoplanets, journey, history } = this.props;
+    const isOnJourney = Object.keys(journey).length;
     const destination = exoplanets
       .find(planet => planet.name === journey.planetId);
-    const encounter = spaceEvents
-      .find(event => event.id === journey.encounters[this.state.page]);
+    
+    if (!isOnJourney) return <Redirect to="/" />
+
     return (
       <Switch>
         <Route exact path="/journey/arrival" render={({history}) => <Arrival history={history} destination={destination}/>} />
