@@ -132,3 +132,17 @@ describe('Fetch Container', () => {
     expect(mockFn).not.toHaveBeenCalled();
   });
 
+  describe('mapStateToProps', () => {
+    it('should be provided with a spaceEvents array from props', () => {
+      const mockState = {
+        exoplanets: [],
+        spaceEvents: [{}, {}],
+        news: [],
+        journey: {},
+        technologies: []
+      }
+      const expected = { spaceEvents: [{}, {}], exoplanets: [], news: [], technologies: [] };
+      const results = mapStateToProps(mockState);
+      expect(results).toEqual(expected);
+    });
+  });
