@@ -20,3 +20,9 @@ describe('Encounter component', () => {
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should match snapshot with showInfo true', () => {
+    wrapper.instance().handleClick();
+    expect(wrapper).toMatchSnapshot();
+  });
+
