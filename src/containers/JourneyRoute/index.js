@@ -7,11 +7,15 @@ import { Encounter } from '../../components/Encounter';
 import { Arrival } from '../../components/Arrival';
 
 export class JourneyRoute extends Component {
-  constructor() {
-    super();
-    this.state = {
-      page: 0
-    }
+  generateEncounters = () => {
+    const { journey, spaceEvents } = this.props;
+    const encounters = journey.encounters
+    .map((eventId, i) => {
+      let encounter = spaceEvents
+      .find(space => space.id === eventId);
+      return <Encounter {...encounter} key={i}/>
+    })
+    return encounters;
   }
 
   render() {
