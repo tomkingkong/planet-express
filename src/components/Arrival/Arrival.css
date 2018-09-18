@@ -1,12 +1,12 @@
 .Arrival {
+  display: none;
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 90vh;
-  height: 100%;
+  height: 1000px;
   width: 100%; }
   .Arrival .arrival__title {
     color: white;
@@ -17,13 +17,13 @@
     z-index: 99999; }
 
 .retire_btn {
+  display: none;
   color: white;
   cursor: pointer;
   background: rgba(174, 180, 182, 0.639);
   border: none;
   box-shadow: 0rem 0rem 0.9rem 0.01rem #dad7d7;
   position: absolute;
-  bottom: 2rem;
   font-size: 200%;
   width: 100%;
   padding: 0.5rem; }
@@ -34,9 +34,28 @@
   box-shadow: 0rem 0rem 0.9rem 0.01rem #56595b; }
 
 .space {
+  display: none;
   background: url("/images/sky_star2.jpg");
   background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 2rem 0; }
+
+.planet__arrival {
+  transition: all 1s linear;
+  transform: scale(1.2);
+  -webkit-animation: zooming 5s ease-in-out;
+  animation: zooming 5s ease-in-out; }
+
+@-webkit-keyframes zooming {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1.2); } }
+
+@keyframes zooming {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1.2); } }
