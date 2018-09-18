@@ -34,7 +34,8 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/**/*.js"
+    "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/**/*.js",
+    "clear-jest": "jest --clearCache"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -43,7 +44,7 @@
       "!src/reducers/index.js",
       "!src/setupTests.js",
       "!src/registerServiceWorker.js",
-      "!src/key.js"
+      "!src/utilities/ScrollAnimate/*"
     ]
   }
 }

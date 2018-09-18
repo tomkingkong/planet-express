@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Travel Container should match snapshot 1`] = `
+<div
+  className="Travel"
+>
+  <header
+    className="travel__title"
+  >
+    <h4>
+      Available Destinations
+    </h4>
+  </header>
+  <section
+    className="travel__locations"
+  >
+    <Connect(DestinationCard)
+      history={Object {}}
+      key="0"
+      planet={Object {}}
+    />
+  </section>
+</div>
+`;
+
+exports[`Travel Container should match snapshot with planet data 1`] = `
+<div
+  className="Travel"
+>
+  <header
+    className="travel__title"
+  >
+    <h4>
+      Available Destinations
+    </h4>
+  </header>
+  <section
+    className="travel__locations"
+  >
+    <Connect(DestinationCard)
+      history={Object {}}
+      key="0"
+      planet={
+        Object {
+          "discoveryBy": "W. M. Keck Observatory",
+          "discoveryMethod": "Radial Velocity",
+          "distance": 35.91,
+          "hostStar": "HD 16141",
+          "image": "/images/alternative/exoplanet_rocky_5.jpg",
+          "mass": 0.26,
+          "name": "HD 16141 b",
+          "numInSystem": "1st",
+          "numMoons": 0,
+          "yearLength": 75.523,
+        }
+      }
+    />
+  </section>
+</div>
+`;

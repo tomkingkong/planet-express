@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should match snapshot 1`] = `
+<div
+  className="Confirm"
+>
+  <h4
+    className="confirm__header"
+  >
+    Confirm destination:
+  </h4>
+  <div
+    className="confirm__options"
+  >
+    <button
+      className="confirm__yes"
+    >
+      Confirm
+    </button>
+    <button
+      className="confirm__no"
+    >
+      Decline
+    </button>
+  </div>
+</div>
+`;

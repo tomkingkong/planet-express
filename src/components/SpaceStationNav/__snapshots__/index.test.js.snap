@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpaceStationNav component should match snapshot 1`] = `
+<div
+  className="SpaceStation"
+>
+  <div
+    className="station__img"
+    style={
+      Object {
+        "backgroundImage": "url(/images/station/ISS_overEarth_1.jpg)",
+      }
+    }
+  />
+  <h4
+    className="station__title"
+  >
+    Welcome to the International Space Station
+  </h4>
+  <Link
+    className="station__dest"
+    replace={false}
+    to="/ISS/destinations"
+  >
+    Take a trip!
+  </Link>
+  <Link
+    className="station__lab"
+    replace={false}
+    to="/ISS/store"
+  >
+    Visit SpaceLab
+  </Link>
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should match snapshot 1`] = `
+<div
+  className="Footer"
+>
+  <button
+    className="footer__back"
+    onClick={[Function]}
+  >
+    Back
+  </button>
+  <Link
+    className="profile__btn"
+    replace={false}
+    to="/profile"
+  >
+    Profile
+  </Link>
+</div>
+`;

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnologyContent component should match snapshot 1`] = `
+<article
+  className="Technology"
+>
+  <h4
+    className="tech__title"
+  />
+  <p
+    className="tech__desc"
+  />
+  <p
+    className="tech__org"
+  >
+    Organization: 
+  </p>
+  <p
+    className="tech__status"
+  >
+    Status: 
+  </p>
+  <ul
+    className="tech__techTags"
+  >
+    <li
+      className="tech__tag"
+      key="words0"
+    >
+      words
+    </li>
+    <li
+      className="tech__tag"
+      key=" bro1"
+    >
+       bro
+    </li>
+  </ul>
+</article>
+`;

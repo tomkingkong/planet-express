@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlanetContent component should match snapshot 1`] = `
+<article
+  className="PlanetContent"
+>
+  <div
+    className="planet__arrival"
+  >
+    <Component
+      planetMap=""
+    />
+  </div>
+  <div
+    className="planet__info"
+  >
+    <h4
+      className="planet__title"
+    />
+    <p>
+       planet orbiting star 
+      .
+    </p>
+    <p>
+      1
+       parsecs from Earth.
+    </p>
+    <p>
+      1.00
+       of Earth years.
+    </p>
+    <p>
+      Disovered using 
+      .
+    </p>
+  </div>
+</article>
+`;

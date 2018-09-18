@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnologiesContainer Container should match snapshot 1`] = `
+<div
+  className="Technologies"
+>
+  <header
+    className="technologies__title"
+  >
+    <h4>
+      SpaceLab
+    </h4>
+  </header>
+  <Component
+    key="0"
+  />
+</div>
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shuttle component should match snapshot 1`] = `
+<div
+  className="Shuttle"
+>
+  <div
+    className="shuttle__launch_img"
+    style={
+      Object {
+        "backgroundImage": "url(/images/shuttle/shuttle_takeoff_smokey.jpg)",
+      }
+    }
+  />
+  <div
+    className="shuttle__info"
+  >
+    <h4
+      className="shuttle__headline"
+    >
+      Departing Earth..
+    </h4>
+    <p
+      className="shuttle__desc"
+    >
+      Launching from Cape Canaveral on DATE, headed for rendezvous with the Internation Space Station.
+    </p>
+  </div>
+  <button
+    className="continue_btn"
+    onClick={[Function]}
+  >
+    continue
+  </button>
+</div>
+`;

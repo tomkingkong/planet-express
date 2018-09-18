@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DestinationCard Container should match snapshot 1`] = `
+<article
+  className="Destination"
+  onClick={[Function]}
+>
+  <div
+    className="planet__icon"
+  >
+    <Component
+      planetMap="butts"
+    />
+  </div>
+  <div
+    className="destination__info"
+  >
+    <h4
+      className="planet__title"
+    >
+      tim
+    </h4>
+    <p>
+      far
+       parsecs from Earth.
+    </p>
+    <h5>
+      Start your trip!
+    </h5>
+  </div>
+</article>
+`;

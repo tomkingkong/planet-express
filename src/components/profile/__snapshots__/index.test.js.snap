@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`profile component should match snapshot 1`] = `
+<div
+  className="profile"
+>
+  <button
+    className="profile__back_btn"
+    onClick={[Function]}
+  >
+    Back
+  </button>
+  <h1>
+    Under Construction
+  </h1>
+</div>
+`;

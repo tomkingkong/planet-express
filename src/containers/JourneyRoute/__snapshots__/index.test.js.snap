@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JourneyRoute Container should match snapshot with journey 1`] = `
+<div
+  className="JourneyRoute"
+>
+  <Component
+    destination={
+      Object {
+        "discoveryBy": "W. M. Keck Observatory",
+        "discoveryMethod": "Radial Velocity",
+        "distance": 35.91,
+        "hostStar": "HD 16141",
+        "image": "/images/alternative/exoplanet_icy_1.png",
+        "mass": 0.26,
+        "name": "HD 16141 b",
+        "numInSystem": "1st",
+        "numMoons": 0,
+        "yearLength": 75.523,
+      }
+    }
+    history={Object {}}
+  />
+  <Encounter
+    collection="news"
+    description="This image shows a massive galaxy cluster embedded in the middle of a field of nearly 8,000 galaxies"
+    id={4229}
+    image_files={
+      Array [
+        Object {
+          "file_size": 1371215,
+          "file_url": "https://media.stsci.edu/uploads/image_file/image_attachment/30945/STSCI-H-p1839a-z-878x1000.png",
+          "height": 1000,
+          "width": 878,
+        },
+        Object {
+          "file_size": 5663943,
+          "file_url": "https://media.stsci.edu/uploads/image_file/image_attachment/30944/STSCI-H-p1839a-m-1757x2000.png",
+          "height": 2000,
+          "width": 1757,
+        },
+        Object {
+          "file_size": 93209692,
+          "file_url": "https://media.stsci.edu/uploads/image_file/image_attachment/30943/STSCI-H-p1839a-f-7819x8897.png",
+          "height": 8897,
+          "width": 7819,
+        },
+      ]
+    }
+    key="0"
+    mission="hubble"
+    name="Galaxy Cluster Abell 370"
+    news_name="a"
+  />
+  <div
+    className="scroll__arrow"
+  >
+    Scroll
+    <br />
+    ^
+  </div>
+</div>
+`;
+
+exports[`JourneyRoute Container should match snapshot without journey 1`] = `
+<Redirect
+  push={false}
+  to="/"
+/>
+`;

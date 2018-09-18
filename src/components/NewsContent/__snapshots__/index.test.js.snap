@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsContent component should match snapshot 1`] = `
+<article
+  className="news__article"
+>
+  <div
+    className="news__img"
+    style={
+      Object {
+        "backgroundImage": "url(undefined)",
+      }
+    }
+  />
+  <div
+    className="news__info"
+  >
+    <h4
+      className="news__title"
+    />
+    <p
+      className="news__desc"
+    />
+    <p
+      className="news__auth"
+    >
+      Author: 
+    </p>
+    <a
+      className="news__link"
+      target="_blank"
+    >
+      Link to Article
+    </a>
+    <p
+      className="news__publish"
+    />
+  </div>
+</article>
+`;

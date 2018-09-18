@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Arrival component should match snapshot 1`] = `
+<article
+  className="Arrival"
+>
+  <h3
+    className="arrival__title"
+  >
+    You have arrived!
+  </h3>
+  <div
+    className="space"
+  >
+    <Component />
+  </div>
+  <button
+    className="retire_btn"
+    onClick={[Function]}
+  >
+    Click to return Home
+  </button>
+</article>
+`;

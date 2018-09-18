@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Encounter component should match snapshot 1`] = `
+<article
+  className="Encounter"
+>
+  <div
+    className="encounter__img"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundImage": "url(images)",
+      }
+    }
+  />
+</article>
+`;
+
+exports[`Encounter component should match snapshot with showInfo true 1`] = `
+<article
+  className="Encounter"
+>
+  <div
+    className="encounter__img"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundImage": "url(images)",
+      }
+    }
+  />
+  <div
+    className="encounter__info"
+  >
+    <h4
+      className="encounter__title"
+    >
+      tim
+    </h4>
+    <p
+      className="encounter__desc"
+    >
+      haha
+    </p>
+  </div>
+</article>
+`;
