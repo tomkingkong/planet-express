@@ -20,3 +20,14 @@ describe('JourneyRoute Container', () => {
     const wrapper = shallow(<JourneyRoute {...mockProps} />)
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should match snapshot without journey', () => {
+    const mockProps = {
+      history: {},
+      journey: {},
+      exoplanets: [],
+      spaceEvents: [],
+    }
+    const wrapper = shallow(<JourneyRoute {...mockProps} />)
+    expect(wrapper).toMatchSnapshot();
+  });
