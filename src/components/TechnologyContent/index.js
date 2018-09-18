@@ -1,15 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, array } from 'prop-types';
 
 import './Technology.css';
 
 export const TechnologyContent = ({ 
-  title, 
-  benefits, 
   org, 
-  description, 
+  title, 
+  status,
+  benefits, 
   techAreas, 
-  status }) => {
+  description }) => {
   let newTags = techAreas[0].split(',')
   const techTags = newTags
     .map((tag, i) => (<li className="tech__tag" key={tag+i}>{tag}</li>));
@@ -31,7 +31,6 @@ export const TechnologyContent = ({
   )
 }
 
-const { string, array } = PropTypes;
 TechnologyContent.propTypes = {
   discoveryMethod: string, 
   description: string, 
