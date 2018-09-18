@@ -46,3 +46,17 @@ describe('fetchSpaceEvent', () => {
     expect(window.fetch).toHaveBeenCalledWith(...expected);
   });
 });
+
+describe('fetchTechnologies', () => {
+  it('should fetch an array of technologies through nasaTech url', async () => {
+    const mockUrl = API.nasaTech;
+    const expected = [mockUrl + Nasa_Key];
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve( )
+    }));
+    await fetchTechnologies();
+    expect(window.fetch).toHaveBeenCalledWith(...expected);
+  });
+});
+
