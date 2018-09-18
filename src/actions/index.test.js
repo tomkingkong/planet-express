@@ -28,3 +28,11 @@ import * as actions from '../actions';
       const expected = {type:'POPULATE_TECHNOLOGIES', technologies:mockTech};
       expect(results).toEqual(expected);
     });
+
+    it('should create an object with a journey object and type SET_JOURNEY', () =>{
+      const mockJourney = { planet: 1, encounters:[] };
+      const results = actions.setJourney(mockJourney);
+      const expected = {type:'SET_JOURNEY', journey:mockJourney};
+      expect(results).toEqual(expected);
+    });
+  })
