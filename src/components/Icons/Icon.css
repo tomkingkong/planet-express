@@ -1,0 +1,34 @@
+.planet__wrapper {
+  border-radius: 50%;
+  box-shadow: inset 5px 5px 10px 0 rgba(255, 255, 255, 0.16), inset -15px -15px 40px 3px rgba(0, 0, 0, 0.9);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  height: 7rem;
+  width: 7rem; }
+  .planet__wrapper .planet {
+    background-repeat: repeat;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100000px;
+    height: inherit;
+    min-height: inherit;
+    -webkit-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite; }
+
+@-webkit-keyframes spin {
+  from {
+    transform: translateX(-1000px); }
+  to {
+    transform: translateX(-550px); } }
+
+@keyframes spin {
+  from {
+    transform: translateX(-1000px); }
+  to {
+    transform: translateX(-550px); } }
