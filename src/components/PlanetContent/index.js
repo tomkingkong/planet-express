@@ -26,8 +26,8 @@ export const PlanetContent = ({
         <p>Disovered using {discoveryMethod}.</p>
       </div>
     </article>
-  )
-}
+  );
+};
 
 PlanetContent.propTypes = {
   discoveryMethod: string, 

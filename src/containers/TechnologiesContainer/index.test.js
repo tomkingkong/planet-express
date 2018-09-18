@@ -21,7 +21,7 @@ describe('TechnologiesContainer Container', () => {
         exoplanets: [],
         journey: {},
         news: []
-      }
+      };
       const expected = { technologies: [] };
       const results = mapStateToProps(mockState);
       expect(results).toEqual(expected);

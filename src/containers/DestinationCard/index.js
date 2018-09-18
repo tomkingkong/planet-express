@@ -13,7 +13,7 @@ export class DestinationCard extends Component {
     super();
     this.state = {
       toggleConfirmModal: false
-    }
+    };
   }
   
   handleClick = () => {
@@ -59,11 +59,11 @@ DestinationCard.propTypes = {
   planet: object,
   image: string,
   name: string
-}
+};
 
 export const mapStateToProps = ({ spaceEvents }) => ({ spaceEvents });
 export const mapDispatchToProps = (dispatch) => ({
   createJourney: (events, id) => dispatch(createJourney(events, id))
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(DestinationCard);

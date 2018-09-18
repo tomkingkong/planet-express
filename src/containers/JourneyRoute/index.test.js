@@ -9,15 +9,15 @@ describe('JourneyRoute Container', () => {
   const mockJourney = {
     encounters: [4229],
     planetId: "HD 16141 b"
-  }
+  };
   it('should match snapshot with journey', () => {
     const mockProps = {
       history: {},
       journey: mockJourney,
       exoplanets: mockData.actionExoplanets,
-      spaceEvents: mockData.actionSpaceEvents,
-    }
-    const wrapper = shallow(<JourneyRoute {...mockProps} />)
+      spaceEvents: mockData.actionSpaceEvents
+    };
+    const wrapper = shallow(<JourneyRoute {...mockProps} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -26,9 +26,9 @@ describe('JourneyRoute Container', () => {
       history: {},
       journey: {},
       exoplanets: [],
-      spaceEvents: [],
-    }
-    const wrapper = shallow(<JourneyRoute {...mockProps} />)
+      spaceEvents: []
+    };
+    const wrapper = shallow(<JourneyRoute {...mockProps} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -40,7 +40,7 @@ describe('JourneyRoute Container', () => {
         news: [],
         journey: {},
         technologies: []
-      }
+      };
       const expected = { exoplanets: [], spaceEvents: [{}, {}], journey: {} };
       const results = mapStateToProps(mockState);
       expect(results).toEqual(expected);

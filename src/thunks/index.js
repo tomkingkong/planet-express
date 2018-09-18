@@ -22,8 +22,8 @@ export const importExoplanets = () => {
     const limitPlanets = exoplanets.slice(0, 10);
     const cleanPlanets = exoplanetCleaner(limitPlanets);
     dispatch(populateExoplanets(cleanPlanets));
-  }
-}
+  };
+};
 
 export const importTechnologies = () => {
   return async (dispatch) => {
@@ -34,8 +34,8 @@ export const importTechnologies = () => {
       .map(tech => fetchTechnology(tech.id)));
     const cleanTechs = techCleaner(dirtyTechs);
     dispatch(populateTechnologies(cleanTechs));
-  }
-}
+  };
+};
 
 export const importScienceNews = () => {
   return async (dispatch) => {
@@ -45,8 +45,8 @@ export const importScienceNews = () => {
       .filter(article => article.urlToImage);
     const limitNews = newswithImages.slice(3, 9);
     dispatch(populateNews(limitNews));
-  }
-}
+  };
+};
 
 export const importSpaceEvents = () => {
   return async (dispatch) => {
@@ -55,16 +55,16 @@ export const importSpaceEvents = () => {
     const spaceEvents = await Promise.all(fetchEvents
       .map( async event => { 
         const eventData = await fetchSpaceEvent(event.id);
-        return {...eventData, id:event.id}
+        return {...eventData, id:event.id};
       }));
     dispatch(populateSpaceEvents(spaceEvents));
-  }
-}
+  };
+};
 
 export const createJourney = (events, planetId) => {
   return dispatch => {
     const encounters = events.slice(14, 18).map(event => event.id);
     const journey = { planetId, encounters };
     dispatch(setJourney(journey));
-  }
-}
+  };
+};

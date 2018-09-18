@@ -8,13 +8,13 @@ describe('Encounter component', () => {
   let mockFiles;
 
   beforeEach(() => {
-    mockFiles = [{file_url:'images'}, {file_url:'images'}, {file_url:'images'}]
+    mockFiles = [{file_url:'images'}, {file_url:'images'}, {file_url:'images'}];
     wrapper = shallow(
-    <Encounter
-      name={'tim'}
-      description={'haha'}
-      image_files={mockFiles}
-    />);
+      <Encounter
+        name={'tim'}
+        description={'haha'}
+        image_files={mockFiles}
+      />);
   });
 
   it('should match snapshot', () => {

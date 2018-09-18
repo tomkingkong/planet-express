@@ -16,7 +16,7 @@ describe('NavRoute component', () => {
       <MemoryRouter initialEntries={['/profile']}>
         <NavRoute location={{pathname: '/profile'}} />
       </MemoryRouter>
-    )
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -26,7 +26,7 @@ describe('NavRoute component', () => {
       <MemoryRouter initialEntries={['/']}>
         <NavRoute location={{pathname: '/'}} />
       </MemoryRouter>
-    )
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });

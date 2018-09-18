@@ -1,8 +1,8 @@
 export const news = (state=[], action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'POPULATE_NEWS':
-    return action.news;
+      return action.news;
     default:
-    return state;
+      return state;
   }
-}
+};

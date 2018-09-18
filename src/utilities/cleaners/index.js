@@ -6,10 +6,10 @@ export const exoplanetCleaner = (planets) => {
   
   return planets.map(planet => {
     let numInSystem = planet.pl_pnum;
-    if (numInSystem >= 4) { numInSystem = numInSystem+'th' } else
-    if (numInSystem === 3) { numInSystem = numInSystem+'rd' } else
-    if (numInSystem === 2) { numInSystem = numInSystem+'nd' } else
-    if (numInSystem === 1) { numInSystem = numInSystem+'st' }
+    if (numInSystem >= 4) { numInSystem = numInSystem+'th'; } else
+    if (numInSystem === 3) { numInSystem = numInSystem+'rd'; } else
+    if (numInSystem === 2) { numInSystem = numInSystem+'nd'; } else
+    if (numInSystem === 1) { numInSystem = numInSystem+'st'; }
     
     const planetImage = exoplanetImages[(Math.random()*exoplanetImages.length-1)+0.5<<0];
     return {
@@ -23,9 +23,9 @@ export const exoplanetCleaner = (planets) => {
       numMoons: planet.pl_mnum || 0,
       discoveryBy: planet.pl_facility,
       discoveryMethod: planet.pl_discmethod
-    }
-  })
-}
+    };
+  });
+};
 
 export const techCleaner = (technologies) => {
   return technologies.map(tech => {
@@ -41,9 +41,9 @@ export const techCleaner = (technologies) => {
       // director: project.programDirectors.programDirector || 'unknown',
       // benefits: $.parseHTML(project.benefits)[0].innerText,
       description: $.parseHTML(project.description)[0].innerText
-    }
-  })
-}
+    };
+  });
+};
 
 //breakdown techAreas into tags
 //clean html code, and split benefits

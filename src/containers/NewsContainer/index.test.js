@@ -9,8 +9,8 @@ describe('News Container', () => {
   it('should match snapshot', () => {
     const mockProps = {
       news: [{}]
-    }
-    const wrapper = shallow(<NewsContainer {...mockProps} />)
+    };
+    const wrapper = shallow(<NewsContainer {...mockProps} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -22,7 +22,7 @@ describe('News Container', () => {
         news: [],
         journey: {},
         technologies: []
-      }
+      };
       const expected = { news: [] };
       const results = mapStateToProps(mockState);
       expect(results).toEqual(expected);

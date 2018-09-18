@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { array } from 'prop-types';
+import { array, object } from 'prop-types';
 import { connect } from 'react-redux';
 
 import { handleScroll } from '../../utilities/ScrollAnimate';
@@ -26,15 +26,16 @@ export class TravelContainer extends Component {
           <h4>Available Destinations</h4>
         </header>
         <section className="travel__locations">
-        { this.displayExoplanets() }
+          { this.displayExoplanets() }
         </section>
       </div>
-    )
+    );
   }
 }
 
 TravelContainer.propTypes = {
-  exoplanets: array
+  exoplanets: array,
+  history: object
 };
 
 export const mapStateToProps = ({ exoplanets }) => ({ exoplanets });

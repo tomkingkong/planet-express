@@ -9,8 +9,8 @@ describe('importTechnologies', () => {
     const mockDispatch = jest.fn();
     const thunk = importTechnologies();
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-        ok: false,
-        json: () => Promise.reject(false)
+      ok: false,
+      json: () => Promise.reject(false)
     }));
     const results = await thunk(mockDispatch);
     expect(results).toEqual(false);
@@ -21,8 +21,8 @@ describe('importExoplanets', () => {
     const mockDispatch = jest.fn();
     const thunk = importExoplanets();
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-        ok: false,
-        json: () => Promise.reject(false)
+      ok: false,
+      json: () => Promise.reject(false)
     }));
     const results = await thunk(mockDispatch);
     expect(results).toEqual(false);
@@ -33,8 +33,8 @@ describe('importScienceNews', () => {
     const mockDispatch = jest.fn();
     const thunk = importScienceNews();
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-        ok: false,
-        json: () => Promise.reject(false)
+      ok: false,
+      json: () => Promise.reject(false)
     }));
     const results = await thunk(mockDispatch);
     expect(results).toEqual(false);
@@ -45,8 +45,8 @@ describe('importSpaceEvents', () => {
     const mockDispatch = jest.fn();
     const thunk = importSpaceEvents();
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-        ok: false,
-        json: () => Promise.reject(false)
+      ok: false,
+      json: () => Promise.reject(false)
     }));
     const results = await thunk(mockDispatch);
     expect(results).toEqual(false);

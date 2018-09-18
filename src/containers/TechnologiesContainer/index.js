@@ -23,7 +23,7 @@ export class TechnologiesContainer extends Component {
         </header>
         { this.displayTechnologies() }
       </div>
-    )
+    );
   }
 }
 

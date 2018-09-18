@@ -26,7 +26,7 @@ export class Fetch extends Component {
     if (technologies.length < 1) await importTechnologies();
   }
   render() {
-    return (<React.Fragment></React.Fragment>)
+    return (<React.Fragment></React.Fragment>);
   }
 }
 
@@ -39,7 +39,7 @@ Fetch.propTypes = {
   importSpaceEvents: func, 
   importScienceNews: func, 
   importTechnologies: func
-}
+};
 
 export const mapStateToProps = ({ 
   news, 

@@ -16,5 +16,5 @@ export const PageContentRoute = () => {
       <Route path='/ISS/*' component={StationContentRoute} />
       <Route path='/journey' component={JourneyRoute} />
     </Switch>
-  )
-}
+  );
+};

@@ -1,8 +1,8 @@
 export const exoplanets = (state=[], action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'POPULATE_EXOPLANETS':
-    return action.exoplanets;
+      return action.exoplanets;
     default:
-    return state;
+      return state;
   }
-}
+};

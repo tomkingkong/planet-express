@@ -11,4 +11,4 @@ export const exoplanetImages = [
   'exoplanet_Mercury_2.jpg',
   'exoplanet_Pluto.jpg',
   'exoplanet_Pluto_2.jpg'
-]
+];

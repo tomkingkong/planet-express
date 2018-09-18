@@ -17,7 +17,7 @@ describe('Travel Container', () => {
       discoveryBy: 'W. M. Keck Observatory',
       discoveryMethod: 'Radial Velocity'
     }
-  ]
+  ];
   it('should match snapshot', () => {
     const wrapper = shallow(<TravelContainer exoplanets={[{}]} history={{}}/>);
     expect(wrapper).toMatchSnapshot();
@@ -31,13 +31,13 @@ describe('Travel Container', () => {
   describe('mapStateToProps', () => {
     it('should receive an exoplanets array from props', () => {
       const mockState = {
-        exoplanets: [ {planet: 1} ],
+        exoplanets: [{planet: 1}],
         technologies: [],
         spaceEvents: [],
         journey: {},
         news: []
       };
-      const expected = {exoplanets: [ {planet: 1} ]};
+      const expected = {exoplanets: [{planet: 1}]};
 
       const mappedProps = mapStateToProps(mockState);
 

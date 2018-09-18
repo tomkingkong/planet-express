@@ -12,5 +12,5 @@ export const NavRoute = () => {
       <Route exact path='/' component={PreLaunchNav} />
       <Route exact path='/ISS' component={SpaceStationNav} />
     </div>
-  )
-}
+  );
+};

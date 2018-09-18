@@ -18,12 +18,12 @@ export const NewsContent = ({
         <h4 className="news__title">{title}</h4>
         <p className="news__desc">{description}</p>
         <p className="news__auth">Author: {author}</p>
-        <a className="news__link" href={url} target="_blank">Link to Article</a>
+        <a className="news__link" href={url} rel="noopener noreferrer" target="_blank">Link to Article</a>
         <p className="news__publish">{publishedAt}</p>
       </div>
     </article>
-  )
-}
+  );
+};
 
 NewsContent.propTypes = {
   description: string, 
@@ -32,4 +32,4 @@ NewsContent.propTypes = {
   author: string, 
   title: string, 
   url: string
-} 
+}; 

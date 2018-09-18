@@ -11,7 +11,7 @@ describe('Arrival component', () => {
 
   it('should send the user to the home page on click', () => {
     const mockFn = jest.fn();
-    const history = {replace:mockFn}
+    const history = {replace:mockFn};
     const wrapper = shallow(<Arrival history={history} />);
     wrapper.find('.retire_btn').simulate('click');
     expect(mockFn).toHaveBeenCalled();

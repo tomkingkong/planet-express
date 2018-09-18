@@ -36,7 +36,7 @@ describe('techCleaner', () => {
         }
       }
     }
-  ]
+  ];
 
   it('should default to unknown if nothing exists', () => {
     const cleanTechs = techCleaner(mockTechs);

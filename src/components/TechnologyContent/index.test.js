@@ -12,11 +12,11 @@ describe('TechnologyContent component', () => {
       benefits: [], 
       techAreas: ['words, bro'], 
       description: '' 
-    }
+    };
     const wrapper = shallow(
-    <TechnologyContent 
-      {...mockProps}
-    />);
+      <TechnologyContent 
+        {...mockProps}
+      />);
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -9,9 +9,9 @@ export const PlanetIcon = ({ planetMap }) => {
     <div className="planet__wrapper">
       <div className="planet" style={planetImageStyle} />
     </div>
-  )
-}
+  );
+};
 
 PlanetIcon.propTypes = {
   planetMap: string
-}
+};

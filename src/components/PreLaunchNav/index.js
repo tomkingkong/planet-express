@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './PreLaunchNav.css'
+import './PreLaunchNav.css';
 
 export const PreLaunchNav = () => {
   return (
@@ -13,5 +13,5 @@ export const PreLaunchNav = () => {
         <p>News</p>
       </Link>
     </div>
-  )
-}
+  );
+};

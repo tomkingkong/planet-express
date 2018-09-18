@@ -13,7 +13,7 @@ import {
 
 jest.mock('../../thunks/');
 jest.mock('../../utilities/fetches/');
-jest.mock('../../utilities/cleaners/exoplanetImages.js')
+jest.mock('../../utilities/cleaners/exoplanetImages.js');
 
 describe('Fetch Container', () => {
   let props;
@@ -28,7 +28,7 @@ describe('Fetch Container', () => {
       importScienceNews: jest.fn(), 
       importSpaceEvents: jest.fn(),
       importExoplanets: jest.fn()
-    }
+    };
   });
 
   it('should match snapshot', () => {
@@ -47,7 +47,7 @@ describe('Fetch Container', () => {
       importScienceNews: jest.fn(), 
       importSpaceEvents: jest.fn(),
       importExoplanets: jest.fn()
-    }
+    };
     const wrapper = shallow(<Fetch {...props} importScienceNews={mockFn} />);
     await wrapper.instance().componentDidMount();
     expect(mockFn).toHaveBeenCalled();
@@ -64,7 +64,7 @@ describe('Fetch Container', () => {
       importScienceNews: jest.fn(), 
       importSpaceEvents: jest.fn(),
       importExoplanets: jest.fn()
-    }
+    };
     const wrapper = shallow(<Fetch {...props} importExoplanets={mockFn}/>);
     await wrapper.instance().componentDidMount();
     expect(mockFn).toHaveBeenCalled();
@@ -81,7 +81,7 @@ describe('Fetch Container', () => {
       importScienceNews: jest.fn(), 
       importSpaceEvents: jest.fn(),
       importExoplanets: jest.fn()
-    }
+    };
     const wrapper = shallow(<Fetch {...props} importSpaceEvents={mockFn}/>);
     await wrapper.instance().componentDidMount();
     expect(mockFn).toHaveBeenCalled();
@@ -98,7 +98,7 @@ describe('Fetch Container', () => {
       importScienceNews: jest.fn(), 
       importSpaceEvents: jest.fn(),
       importExoplanets: jest.fn()
-    }
+    };
     const wrapper = shallow(<Fetch {...props} importTechnologies={mockFn}/>);
     await wrapper.instance().componentDidMount();
     expect(mockFn).toHaveBeenCalled();
@@ -140,7 +140,7 @@ describe('Fetch Container', () => {
         news: [],
         journey: {},
         technologies: []
-      }
+      };
       const expected = { spaceEvents: [{}, {}], exoplanets: [], news: [], technologies: [] };
       const results = mapStateToProps(mockState);
       expect(results).toEqual(expected);

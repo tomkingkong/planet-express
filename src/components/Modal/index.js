@@ -13,9 +13,9 @@ export const Modal = ({ handleConfirm }) => {
         <button className="confirm__no" onClick={handleConfirm}>Decline</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Modal.propTypes = {
   handleConfirm: func
-} 
+}; 

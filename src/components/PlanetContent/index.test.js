@@ -13,11 +13,11 @@ describe('PlanetContent component', () => {
       yearLength: 1, 
       numInSystem: '',
       discoveryMethod: ''
-    }
+    };
     const wrapper = shallow(
-    <PlanetContent 
-      {...mockProps}
-    />);
+      <PlanetContent 
+        {...mockProps}
+      />);
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,8 +1,8 @@
 export const journey = (state={}, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'SET_JOURNEY':
-    return action.journey;
+      return action.journey;
     default:
-    return state;
+      return state;
   }
-}
+};

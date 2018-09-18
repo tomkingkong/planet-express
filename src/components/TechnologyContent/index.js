@@ -7,19 +7,15 @@ export const TechnologyContent = ({
   org, 
   title, 
   status,
-  benefits, 
   techAreas, 
   description }) => {
-  let newTags = techAreas[0].split(',')
+  let newTags = techAreas[0].split(',');
   const techTags = newTags
     .map((tag, i) => (<li className="tech__tag" key={tag+i}>{tag}</li>));
-  // const benefitList = benefits
-  //   .map((benefit, i) => <li key={benefit+i}>{benefit}</li>);
   return (
     <article className="Technology">
       <h4 className="tech__title">{title}</h4>
       <p className="tech__desc">{description}</p>
-      {/* <ul className="benefits">{benefitList}</ul> */}
       <p className="tech__org">
         Organization: {org}
       </p>
@@ -28,8 +24,8 @@ export const TechnologyContent = ({
       </p>
       <ul className="tech__techTags">{techTags}</ul>
     </article>
-  )
-}
+  );
+};
 
 TechnologyContent.propTypes = {
   discoveryMethod: string, 

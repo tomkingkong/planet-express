@@ -12,12 +12,12 @@ jest.mock('../../utilities/cleaners/exoplanetImages.js');
 
 describe('importExoplanets', () => {
   it('should call dispatch with populateExoplanets when importExoplanets is called', async () => {
-      const mockDispatch = jest.fn();
-      const thunk = importExoplanets();
-      await thunk(mockDispatch);
-      expect(mockDispatch).toHaveBeenCalledWith(actions.populateExoplanets(mockData.actionExoplanets));
-    });
+    const mockDispatch = jest.fn();
+    const thunk = importExoplanets();
+    await thunk(mockDispatch);
+    expect(mockDispatch).toHaveBeenCalledWith(actions.populateExoplanets(mockData.actionExoplanets));
   });
+});
   
 describe('importTechnologies', () => {
   it('should call dispatch with populateTechnologies when importTechnologies is called', async () => {

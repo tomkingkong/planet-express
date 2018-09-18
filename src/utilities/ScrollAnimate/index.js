@@ -2,9 +2,9 @@ import $ from 'jquery';
 
 export const startAtBottom = () => {
   $(function() { 
-    window.scrollTo(0, document.body.offsetHeight) 
+    window.scrollTo(0, document.body.offsetHeight); 
   });
-}
+};
 
 export const arrivalAnimate = () => {
   $(function() {
@@ -20,7 +20,7 @@ export const arrivalAnimate = () => {
           });
         }
       });
-      if(windowPos < 500) {
+      if (windowPos < 500) {
         $('.space').show();
         $('.planet__info').delay(4000).fadeIn(2000);
         $('.retire_btn').delay(6000).fadeIn(800);
@@ -30,7 +30,7 @@ export const arrivalAnimate = () => {
       }
     });
   });
-}
+};
 
 export const handleScroll = (parent, child) => {
   $(function(){
@@ -43,4 +43,4 @@ export const handleScroll = (parent, child) => {
     });
   });
 
-}
+};

@@ -12,9 +12,9 @@ export const Profile = ({ history }) => {
       Back</button>
       <h1>Under Construction</h1>
     </div>
-  )
-}
+  );
+};
 
 Profile.propTypes = {
   history: object
-} 
+}; 

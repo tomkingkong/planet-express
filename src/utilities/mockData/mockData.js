@@ -9,7 +9,7 @@ export const newsArray = {articles:[
     url : "https://phys.org/news/2018-09-closest-planet-solar-habitable-dayside.html",
     urlToImage : "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2018/theclosestpl.jpg"
   }
-]}
+]};
 
 export const exoplanets = [
   {
@@ -261,7 +261,7 @@ export const exoplanets = [
     st_tefflim : 0,
     st_teffn : 8
   }
-]
+];
 
 export const spaceEvents = [
   {
@@ -270,25 +270,25 @@ export const spaceEvents = [
     name : "Galaxy Cluster Abell 370",
     news_name : "a"
   }
-]
+];
 
 export const mappedSpaceEvent = {
   collection : "news",
   description : "This image shows a massive galaxy cluster embedded in the middle of a field of nearly 8,000 galaxies",
   id : 4229,
   image_files : [
-  { file_url: "https://media.stsci.edu/uploads/image_file/image_attachment/30945/STSCI-H-p1839a-z-878x1000.png", file_size: 1371215, width: 878, height: 1000 },
-  { file_url: "https://media.stsci.edu/uploads/image_file/image_attachment/30944/STSCI-H-p1839a-m-1757x2000.png", file_size: 5663943, width: 1757, height: 2000 },
-  { file_url: "https://media.stsci.edu/uploads/image_file/image_attachment/30943/STSCI-H-p1839a-f-7819x8897.png", file_size: 93209692, width: 7819, height: 8897 }
+    { file_url: "https://media.stsci.edu/uploads/image_file/image_attachment/30945/STSCI-H-p1839a-z-878x1000.png", file_size: 1371215, width: 878, height: 1000 },
+    { file_url: "https://media.stsci.edu/uploads/image_file/image_attachment/30944/STSCI-H-p1839a-m-1757x2000.png", file_size: 5663943, width: 1757, height: 2000 },
+    { file_url: "https://media.stsci.edu/uploads/image_file/image_attachment/30943/STSCI-H-p1839a-f-7819x8897.png", file_size: 93209692, width: 7819, height: 8897 }
   ],
   mission : "hubble",
   name : "Galaxy Cluster Abell 370",
   news_name : "a"
-}
+};
 
 export const technologyIds = {projects: {projects: [
   { id : 17389, lastUpdated : "2018-9-11" }
-]}}
+]}};
 
 export const technology = {
   project: {
@@ -343,16 +343,16 @@ export const technology = {
     title : "CO2 Sounder Lidar for Earth Science Missions",
     website : "http://sciences.gsfc.nasa.gov/sed/"
   }
-}
+};
 
 export const actionTechs = [{
   "description": undefined, 
   "discoveryMethod": "unknown", 
   "org": "Goddard Space Flight Center", 
   "status": "Active", 
-  "techAreas": [ "Science Instruments, Observatories, and Sensor Systems" ], 
+  "techAreas": ["Science Instruments, Observatories, and Sensor Systems"], 
   "title": "CO2 Sounder Lidar for Earth Science Missions"
-}]
+}];
 
 export const actionSpaceEvents = [
   {
@@ -367,14 +367,14 @@ export const actionSpaceEvents = [
     "name": "Galaxy Cluster Abell 370", 
     "news_name": "a"
   }
-]
+];
 
 export const actionExoplanets = [
   {"discoveryBy": "W. M. Keck Observatory", "discoveryMethod": "Radial Velocity", "distance": 35.91, "hostStar": "HD 16141", "image": "/images/alternative/exoplanet_icy_1.png", "mass": 0.26, "name": "HD 16141 b", "numInSystem": "1st", "numMoons": 0, "yearLength": 75.523}, 
   {"discoveryBy": "W. M. Keck Observatory", "discoveryMethod": "Radial Velocity", "distance": 35.91, "hostStar": "HD 16141", "image": "/images/alternative/exoplanet_icy_1.png", "mass": 0.26, "name": "HD 16141 c", "numInSystem": "1st", "numMoons": 0, "yearLength": 75.523}, 
   {"discoveryBy": "W. M. Keck Observatory", "discoveryMethod": "Radial Velocity", "distance": 35.91, "hostStar": "HD 16141", "image": "/images/alternative/exoplanet_icy_1.png", "mass": 0.26, "name": "HD 16141 a", "numInSystem": "1st", "numMoons": 0, "yearLength": 75.523}
-]
+];
 
 export const actionsNews = [
 
-]
+];

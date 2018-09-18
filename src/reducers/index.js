@@ -12,4 +12,4 @@ export const rootReducer = combineReducers({
   exoplanets,
   journey,
   news
-})
+});

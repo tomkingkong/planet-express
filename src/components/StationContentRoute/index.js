@@ -10,5 +10,5 @@ export const StationContentRoute = () => {
       <Route path="/ISS/destinations" component={TravelContainer} />
       <Route path="/ISS/store" component={TechnologiesContainer} />
     </Switch>
-  )
-}
+  );
+};

@@ -21,7 +21,7 @@ export const fetchTechnology = (id) => fetchCurry(nasaTech)('/', id, Nasa_Key);
 
 export const fetchScienceNews = () => fetchCurry(scienceNews)(News_key);
 
-export const fetchPlanets = () => fetchCurry(exoplanets)(Nasa_Key,'&table=exoplanets', '&format=json');
+export const fetchPlanets = () => fetchCurry(exoplanets)(Nasa_Key, '&table=exoplanets', '&format=json');
 
 
 /*

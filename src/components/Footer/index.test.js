@@ -11,7 +11,7 @@ describe('Footer component', () => {
 
   it('should take the user back to their previous page', () => {
     const mockFn = jest.fn();
-    const history = {goBack:mockFn}
+    const history = {goBack:mockFn};
     const wrapper = shallow(<Footer history={history} />);
     wrapper.find('.footer__back').simulate('click');
     expect(mockFn).toHaveBeenCalled();

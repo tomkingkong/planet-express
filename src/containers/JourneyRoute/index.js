@@ -12,11 +12,11 @@ export class JourneyRoute extends Component {
   generateEncounters = () => {
     const { journey, spaceEvents } = this.props;
     const encounters = journey.encounters
-    .map((eventId, i) => {
-      let encounter = spaceEvents
-      .find(space => space.id === eventId);
-      return <Encounter {...encounter} key={i}/>
-    })
+      .map((eventId, i) => {
+        let encounter = spaceEvents
+          .find(space => space.id === eventId);
+        return <Encounter {...encounter} key={i}/>;
+      });
     return encounters;
   }
 
@@ -24,9 +24,9 @@ export class JourneyRoute extends Component {
     const { exoplanets, journey, history } = this.props;
     const isOnJourney = Object.keys(journey).length;
     const destination = exoplanets
-    .find(planet => planet.name === journey.planetId);
+      .find(planet => planet.name === journey.planetId);
     
-    if (!isOnJourney) return <Redirect to="/" />
+    if (!isOnJourney) return <Redirect to="/" />;
 
     startAtBottom();
     arrivalAnimate();
@@ -36,7 +36,7 @@ export class JourneyRoute extends Component {
         { this.generateEncounters() }
         <div className="scroll__arrow">Scroll<br/>^</div>
       </div>
-    )
+    );
   }
 }
 
@@ -44,16 +44,16 @@ JourneyRoute.propTypes = {
   history: object,
   journey: object,
   exoplanets: array,
-  spaceEvents: array,
+  spaceEvents: array
 };
 
 export const mapStateToProps = ({ 
   journey, 
   exoplanets, 
   spaceEvents }) => ({
-    journey,
-    exoplanets,
-    spaceEvents
-  });
+  journey,
+  exoplanets,
+  spaceEvents
+});
 
 export default connect(mapStateToProps, null)(JourneyRoute);

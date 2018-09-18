@@ -10,9 +10,9 @@ export const Footer = ({ history }) => {
       <button className="footer__back" onClick={() => history.goBack()}>Back</button>
       <Link className="profile__btn" to='/profile'>Profile</Link>
     </div>
-  )
-}
+  );
+};
 
 Footer.propTypes = {
   history: object
-} 
+}; 

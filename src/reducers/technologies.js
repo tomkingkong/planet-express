@@ -1,8 +1,8 @@
 export const technologies = (state=[], action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'POPULATE_TECHNOLOGIES':
-    return action.technologies;
+      return action.technologies;
     default:
-    return state;
+      return state;
   }
-}
+};
