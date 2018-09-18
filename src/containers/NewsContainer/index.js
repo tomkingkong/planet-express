@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { array } from 'prop-types';
 import { connect } from 'react-redux';
 
 import './NewsSection.css';
@@ -16,7 +16,7 @@ export const NewsContainer = ({ news }) => {
 }
 
 NewsContainer.propTypes = {
-  news: PropTypes.array
+  news: array
 }
 
 export const mapStateToProps = ({ news }) => ({ news });
