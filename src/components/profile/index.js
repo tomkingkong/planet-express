@@ -1,16 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { object } from 'prop-types';
 
-export const profile = ({ history }) => {
+import './profile.css';
+
+export const Profile = ({ history }) => {
   return (
-    <div>
-      <button onClick={() => history.goBack()}>Back</button>
+    <div className="profile">
+      <button 
+        className="profile__back_btn" 
+        onClick={() => history.goBack()}>
+      Back</button>
+      <h1>Under Construction</h1>
     </div>
   )
 }
 
-
-const { object } = PropTypes;
-profile.propTypes = {
+Profile.propTypes = {
   history: object
 } 
