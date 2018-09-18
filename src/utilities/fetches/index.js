@@ -1,6 +1,9 @@
 import { Nasa_Key, News_key } from '../api/key';
 import { API } from '../api/API';
 
+const Nasa_Key = process.env.Nasa_Key;
+const News_key = process.env.News_key;
+
 export const fetchCurry = (originUrl) => async (...paths) => {  
   const url = originUrl + paths.join('');
   try {
