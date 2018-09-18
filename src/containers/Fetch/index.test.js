@@ -171,3 +171,13 @@ describe('Fetch Container', () => {
       mappedProps.importSpaceEvents();
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
     });
+
+    it('should call dispatch with importExoplanets when it is called', () => {
+      const mockDispatch = jest.fn();
+      const actionToDispatch = importExoplanets();
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.importExoplanets();
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
+  });
+});
