@@ -4,13 +4,29 @@
   overflow: scroll;
   height: calc(100vh - 65px);
   width: 100%;
-  .technologies__title {
-    color: white;
-    background: rgba(0, 0, 0, 0.8);
-    position: sticky;
-    top: 0;
-    text-align: center;
-    margin: 1rem 0;
-    padding: 0.5rem;
+}
+
+.technologies__title {
+  color: white;
+  background: rgba(4, 11, 31, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160%;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  z-index: 9999;
+  transition: all 0.1s linear;
+  h4 {
+    margin: 0;
   }
+}
+
+.smaller {
+  box-shadow: 0 0.1rem 1rem 0.01rem rgba(17, 17, 19, 0.872);
+  font-size: 100%;
+  height: 2rem;
 }
