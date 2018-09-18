@@ -125,3 +125,10 @@ describe('Fetch Container', () => {
     expect(mockFn).not.toHaveBeenCalled();
   });
 
+  it('importTechnologies should not be called if technologies array has length', async () => {
+    const mockFn = jest.fn();
+    const wrapper = shallow(<Fetch {...props} importTechnologies={mockFn}/>);
+    await wrapper.instance().componentDidMount();
+    expect(mockFn).not.toHaveBeenCalled();
+  });
+
