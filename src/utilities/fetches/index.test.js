@@ -32,3 +32,17 @@ describe('fetchSpaceEvents', () => {
     expect(window.fetch).toHaveBeenCalledWith(...expected);
   });
 });
+
+describe('fetchSpaceEvent', () => {
+  it('should fetch a space event through hubble url and id', async () => {
+    const mockId = 12;
+    const mockUrl = API.hubble;
+    const expected = [mockUrl + 'image/' + mockId];
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve( )
+    }));
+    await fetchSpaceEvent(mockId);
+    expect(window.fetch).toHaveBeenCalledWith(...expected);
+  });
+});
