@@ -3,4 +3,4 @@
 
 ##### personal project
 
-<img src="https://github.com/tomkingkong/planet-express/tree/master/public/images/planet-express-runthrough.gif" />
+<img src="https://github.com/tomkingkong/planet-express/master/public/images/planet-express-runthrough.gif" width="600"/>
