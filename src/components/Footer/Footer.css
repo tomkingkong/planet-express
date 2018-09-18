@@ -15,9 +15,9 @@
     font-size: 100%;
     border-radius: 0 0.2rem 0.2rem 0; }
 
-.profile {
+.profile__btn {
   color: #0e4b8c;
   background: #e98f20;
-  padding: 0.4rem;
   border-radius: 3rem;
+  padding: 0.4rem;
   text-decoration: none; }
