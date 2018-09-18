@@ -54,3 +54,10 @@ import { news } from '../reducers/news';
       expect(results).toEqual(expected);
     });
   });
+
+  describe('journey reducer', () => {
+    it('should return the initial state', () => {
+      const expected = {};
+      const results = journey(undefined, {});
+      expect(results).toEqual(expected);
+    });
