@@ -31,3 +31,20 @@ describe('JourneyRoute Container', () => {
     const wrapper = shallow(<JourneyRoute {...mockProps} />)
     expect(wrapper).toMatchSnapshot();
   });
+
+  describe('mapStateToProps', () => {
+    it('should be provided with a spaceEvents and exoplanets array and journey object from props', () => {
+      const mockState = {
+        exoplanets: [],
+        spaceEvents: [{}, {}],
+        news: [],
+        journey: {},
+        technologies: []
+      }
+      const expected = { exoplanets: [], spaceEvents: [{}, {}], journey: {} };
+      const results = mapStateToProps(mockState);
+      expect(results).toEqual(expected);
+    });
+  });
+});
+
