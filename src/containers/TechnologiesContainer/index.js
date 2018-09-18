@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { array } from 'prop-types';
 import { connect } from 'react-redux';
 
 import './Technologies.css';
 import { TechnologyContent } from '../../components/TechnologyContent';
+
+import { handleScroll } from '../../utilities/ScrollAnimate';
 
 export class TechnologiesContainer extends Component {
 
@@ -13,16 +15,18 @@ export class TechnologiesContainer extends Component {
   }
 
   render() {
+    handleScroll('.Technologies', '.technologies__title');
     return (
       <div className="Technologies">
-        <h1 className="technologies__title">SpaceLab</h1>
-        {this.displayTechnologies()}
+        <header className="technologies__title">
+          <h4>SpaceLab</h4>
+        </header>
+        { this.displayTechnologies() }
       </div>
     )
   }
 }
 
-const { array } = PropTypes;
 TechnologiesContainer.propTypes = {
   technologies: array
 };
@@ -30,4 +34,3 @@ TechnologiesContainer.propTypes = {
 export const mapStateToProps = ({ technologies }) => ({ technologies });
 
 export default connect(mapStateToProps, null)(TechnologiesContainer);
-
