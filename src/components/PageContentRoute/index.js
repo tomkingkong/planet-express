@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { Profile } from '../../components/Profile';
-import { Shuttle } from '../../components/Shuttle';
+import { Profile } from '../Profile';
+import { Shuttle } from '../Shuttle';
 import { StationContentRoute } from '../StationContentRoute';
 import JourneyRoute from '../../containers/JourneyRoute';
 import NewsContainer from '../../containers/NewsContainer';

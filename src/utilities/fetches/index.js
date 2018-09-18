@@ -1,5 +1,5 @@
 // import { Nasa_Key, News_key } from '../api/key';
-// import { API } from '../api/API';
+import { API } from '../api/API';
 
 const Nasa_Key = process.env.Nasa_Key;
 const News_key = process.env.News_key;
