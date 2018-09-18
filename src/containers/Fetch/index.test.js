@@ -103,3 +103,10 @@ describe('Fetch Container', () => {
     await wrapper.instance().componentDidMount();
     expect(mockFn).toHaveBeenCalled();
   });
+
+  it('importScienceNews should not be called if news array has length', async () => {
+    const mockFn = jest.fn();
+    const wrapper = shallow(<Fetch {...props} importScienceNews={mockFn} />);
+    await wrapper.instance().componentDidMount();
+    expect(mockFn).not.toHaveBeenCalled();
+  });
