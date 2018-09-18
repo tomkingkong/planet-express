@@ -73,3 +73,16 @@ describe('fetchTechnology', () => {
     expect(window.fetch).toHaveBeenCalledWith(...expected);
   });
 });
+
+describe('fetchScienceNews', () => {
+  it('should fetch an array science news through scienceNews url', async () => {
+    const mockUrl = API.scienceNews;
+    const expected = [mockUrl + News_key];
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve( )
+    }));
+    await fetchScienceNews();
+    expect(window.fetch).toHaveBeenCalledWith(...expected);
+  });
+});
