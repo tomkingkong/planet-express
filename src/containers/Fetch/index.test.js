@@ -14,3 +14,24 @@ import {
 jest.mock('../../thunks/');
 jest.mock('../../utilities/fetches/');
 jest.mock('../../utilities/cleaners/exoplanetImages.js')
+
+describe('Fetch Container', () => {
+  let props;
+  
+  beforeEach(() => {
+    props = {
+      exoplanets: [{}],
+      spaceEvents: [{}],
+      news: [{}],
+      technologies: [{}],
+      importTechnologies: jest.fn(),
+      importScienceNews: jest.fn(), 
+      importSpaceEvents: jest.fn(),
+      importExoplanets: jest.fn()
+    }
+  });
+
+  it('should match snapshot', () => {
+    const wrapper = shallow(<Fetch />);
+    expect(wrapper).toMatchSnapshot();
+  });
