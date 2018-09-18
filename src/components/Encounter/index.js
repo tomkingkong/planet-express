@@ -14,12 +14,15 @@ export default class Encounter extends Component {
     this.setState({ showInfo:!this.state.showInfo })
   }
   
+  displayInfo = () => {
+    const { name, description } = this.props;
   return (
-    <article className="Encounter">
-      <div className="encounter__img" style={encounterImgStyle} />
+      <div className="encounter__info">
       <h4 className="encounter__title">{name}</h4>
       <p className="encounter__desc">{description}</p>
-      <button className="continue__btn" onClick={nextEvent}>continue</button>
+      </div>
+    )
+  }
     </article>
   )
 }
