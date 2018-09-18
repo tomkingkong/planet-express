@@ -24,21 +24,24 @@ export class JourneyRoute extends Component {
     const { exoplanets, journey, history } = this.props;
     const isOnJourney = Object.keys(journey).length;
     const destination = exoplanets
-      .find(planet => planet.name === journey.planetId);
+    .find(planet => planet.name === journey.planetId);
     
     if (!isOnJourney) return <Redirect to="/" />
 
+    startAtBottom();
+    arrivalAnimate();
     return (
-      <Switch>
-        <Route exact path="/journey/arrival" render={({history}) => <Arrival history={history} destination={destination}/>} />
-        <Route path="/journey" render={() => <Encounter nextEvent={this.nextEvent} {...encounter} />} />
-      </Switch>
+      <div className="JourneyRoute">
+        <Arrival history={history} destination={destination} />
+        { this.generateEncounters() }
+        <div className="scroll__arrow">Scroll<br/>^</div>
+      </div>
     )
   }
 }
 
-const { object, array } = PropTypes;
 JourneyRoute.propTypes = {
+  history: object,
   journey: object,
   exoplanets: array,
   spaceEvents: array,
