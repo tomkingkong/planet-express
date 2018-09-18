@@ -14,18 +14,6 @@ export class JourneyRoute extends Component {
     }
   }
 
-  nextEvent = () => {
-    const { page } = this.state;
-    const { journey, history } = this.props;
-    if (page < journey.encounters.length-1) {
-      this.setState({ 
-        page: page + 1 
-      }, history.replace(`/journey/encounter/${this.state.page}`));
-    } else {
-      history.replace('/journey/arrival');
-    }
-  }
-
   render() {
     const { exoplanets, journey, spaceEvents } = this.props;
     const destination = exoplanets
