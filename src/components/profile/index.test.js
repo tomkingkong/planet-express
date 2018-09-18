@@ -8,3 +8,12 @@ describe('profile component', () => {
     const wrapper = shallow(<Profile />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should send the user back to the previous page', () => {
+    const mockFn = jest.fn();
+    const history = { goBack: mockFn };
+    const wrapper = shallow(<Profile history={history}/>);
+    wrapper.find('.profile__back_btn').simulate('click');
+    expect(mockFn).toHaveBeenCalled();
+  });
+});
