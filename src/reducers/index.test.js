@@ -10,3 +10,13 @@ import { news } from '../reducers/news';
       const results = technologies(undefined, {});
       expect(results).toEqual(expected);
     });
+
+    it('should return a state full of technologies', () => {
+      const initialState = [];
+      const mockTech = [{tech:1}];
+      const mockAction = {technologies: mockTech, type:'POPULATE_TECHNOLOGIES'}
+      const results = technologies(initialState, mockAction);
+      const expected = [{tech:1}];
+      expect(results).toEqual(expected);
+    });
+  });
