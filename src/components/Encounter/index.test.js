@@ -26,3 +26,7 @@ describe('Encounter component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should have a default showInfo state of false', () => {
+    expect(wrapper.state().showInfo).toEqual(false);
+  });
+
