@@ -19,3 +19,16 @@ describe('fetchCurry', () => {
     expect(result).toEqual(false);
   });
 });
+
+describe('fetchSpaceEvents', () => {
+  it('should fetch an array of space events through hubble url', async () => {
+    const mockUrl = API.hubble;
+    const expected = [mockUrl + 'images/'];
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve( )
+    }));
+    await fetchSpaceEvents();
+    expect(window.fetch).toHaveBeenCalledWith(...expected);
+  });
+});
