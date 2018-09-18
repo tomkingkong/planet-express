@@ -37,3 +37,10 @@ import { news } from '../reducers/news';
       expect(results).toEqual(expected);
     });
   });
+
+  describe('exoplanets reducer', () => {
+    it('should return the initial state', () => {
+      const expected = [];
+      const results = exoplanets(undefined, {});
+      expect(results).toEqual(expected);
+    });
