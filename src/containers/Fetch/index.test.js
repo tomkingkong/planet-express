@@ -87,3 +87,19 @@ describe('Fetch Container', () => {
     expect(mockFn).toHaveBeenCalled();
   });
 
+  it('importTechnologies should be called if technologies array does not have length', async () => {
+    const mockFn = jest.fn();
+    props = {
+      exoplanets: [],
+      spaceEvents: [],
+      news: [],
+      technologies: [],
+      importTechnologies: jest.fn(),
+      importScienceNews: jest.fn(), 
+      importSpaceEvents: jest.fn(),
+      importExoplanets: jest.fn()
+    }
+    const wrapper = shallow(<Fetch {...props} importTechnologies={mockFn}/>);
+    await wrapper.instance().componentDidMount();
+    expect(mockFn).toHaveBeenCalled();
+  });
