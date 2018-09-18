@@ -19,3 +19,14 @@ describe('NavRoute component', () => {
     )
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should match snapshot with / path', () => {
+    const wrapper = shallow(<NavRoute location={{pathname: '/'}} />);
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <NavRoute location={{pathname: '/'}} />
+      </MemoryRouter>
+    )
+    expect(wrapper).toMatchSnapshot();
+  });
+});
