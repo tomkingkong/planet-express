@@ -1,4 +1,4 @@
-import { Nasa_Key, News_key } from '../api/key';
+// import { Nasa_Key, News_key } from '../api/key';
 import { API } from '../api/API';
 
 const Nasa_Key = process.env.Nasa_Key;
