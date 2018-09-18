@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, number } from 'prop-types';
 
 import './PlanetContent.css';
+import { PlanetIcon } from '../Icons';
 
 export const PlanetContent = ({
   name, 
@@ -12,10 +13,11 @@ export const PlanetContent = ({
   numInSystem,
   discoveryMethod }) => {
 
-  const planetImageStyle = { backgroundImage: `url(${image})` };
   return (
     <article className="PlanetContent">
-      <div className="planet__icon" style={planetImageStyle}></div>
+      <div className="planet__arrival">
+        <PlanetIcon planetMap={image}/>
+      </div>
       <div className="planet__info">
         <h4 className="planet__title">{name}</h4>
         <p>{numInSystem} planet orbiting star {hostStar}.</p>
@@ -27,12 +29,12 @@ export const PlanetContent = ({
   )
 }
 
-const { string } = PropTypes;
 PlanetContent.propTypes = {
-  publishedAt: string, 
-  description: string, 
-  urlToImage: string, 
-  author: string, 
-  title: string, 
-  url: string
+  discoveryMethod: string, 
+  numInSystem: string, 
+  yearLength: number, 
+  hostStar: string, 
+  distance: number, 
+  image: string,
+  name: string
 };
