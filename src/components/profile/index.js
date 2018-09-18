@@ -3,7 +3,7 @@ import { object } from 'prop-types';
 
 import './profile.css';
 
-export const Profile = ({ history }) => {
+export const profile = ({ history }) => {
   return (
     <div className="profile">
       <button 
@@ -15,6 +15,6 @@ export const Profile = ({ history }) => {
   );
 };
 
-Profile.propTypes = {
+profile.propTypes = {
   history: object
 }; 
