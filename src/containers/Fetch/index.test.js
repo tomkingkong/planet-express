@@ -146,3 +146,12 @@ describe('Fetch Container', () => {
       expect(results).toEqual(expected);
     });
   });
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch with importTechnologies when it is called', () => {
+      const mockDispatch = jest.fn();
+      const actionToDispatch = importTechnologies();
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.importTechnologies();
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
