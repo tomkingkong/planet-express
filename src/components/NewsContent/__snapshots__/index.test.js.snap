@@ -28,6 +28,7 @@ exports[`NewsContent component should match snapshot 1`] = `
     </p>
     <a
       className="news__link"
+      rel="noopener noreferrer"
       target="_blank"
     >
       Link to Article
