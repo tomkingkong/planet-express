@@ -10,6 +10,10 @@ export default class Encounter extends Component {
       showInfo: false
   }
   }
+  handleClick = () => {
+    this.setState({ showInfo:!this.state.showInfo })
+  }
+  
   return (
     <article className="Encounter">
       <div className="encounter__img" style={encounterImgStyle} />
