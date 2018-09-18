@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { array, func } from 'prop-types';
+
 import { 
   importTechnologies,
   importScienceNews, 
@@ -17,6 +19,7 @@ export class Fetch extends Component {
       importSpaceEvents, 
       importScienceNews, 
       importTechnologies } = this.props;
+      
     if (news.length < 1) await importScienceNews();
     if (exoplanets.length < 1) await importExoplanets();
     if (spaceEvents.length < 1) await importSpaceEvents();
@@ -25,6 +28,17 @@ export class Fetch extends Component {
   render() {
     return (<React.Fragment></React.Fragment>)
   }
+}
+
+Fetch.propTypes = {
+  news: array, 
+  exoplanets: array, 
+  spaceEvents: array,
+  technologies: array, 
+  importExoplanets: func,
+  importSpaceEvents: func, 
+  importScienceNews: func, 
+  importTechnologies: func
 }
 
 export const mapStateToProps = ({ 
