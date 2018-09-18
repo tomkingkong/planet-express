@@ -62,7 +62,7 @@ import { news } from '../reducers/news';
       expect(results).toEqual(expected);
     });
 
-    it('should return a state full of journey', () => {
+    it('should return a state full of spaceEvents', () => {
       const initialState = [];
       const mockJourney = {encounter:1};
       const mockAction = {journey: mockJourney, type:'SET_JOURNEY'}
@@ -78,3 +78,13 @@ import { news } from '../reducers/news';
       const results = news(undefined, {});
       expect(results).toEqual(expected);
     });
+
+    it('should return a state full of news', () => {
+      const initialState = [];
+      const mockNews = [{newsArticle:1}];
+      const mockAction = {news: mockNews, type:'POPULATE_NEWS'}
+      const results = news(initialState, mockAction);
+      const expected = [{newsArticle:1}];
+      expect(results).toEqual(expected);
+    });
+  });
