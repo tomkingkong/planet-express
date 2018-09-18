@@ -61,3 +61,13 @@ import { news } from '../reducers/news';
       const results = journey(undefined, {});
       expect(results).toEqual(expected);
     });
+
+    it('should return a state full of spaceEvents', () => {
+      const initialState = [];
+      const mockJourney = {encounter:1};
+      const mockAction = {journey: mockJourney, type:'SET_JOURNEY'}
+      const results = journey(initialState, mockAction);
+      const expected ={encounter:1};
+      expect(results).toEqual(expected);
+    });
+  });
