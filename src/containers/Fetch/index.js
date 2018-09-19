@@ -41,16 +41,11 @@ Fetch.propTypes = {
   importTechnologies: func
 };
 
-export const mapStateToProps = ({ 
-  news, 
-  exoplanets, 
-  spaceEvents, 
-  technologies 
-}) => ({ 
-  news, 
-  exoplanets, 
-  spaceEvents, 
-  technologies 
+export const mapStateToProps = (state) => ({ 
+  news: state.news, 
+  exoplanets: state.exoplanets, 
+  spaceEvents: state.spaceEvents, 
+  technologies: state.technologies 
 });
 
 export const mapDispatchToProps = (dispatch) => ({
