@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { profile } from '../Profile';
+import { profile } from '../profile';
 import { Shuttle } from '../Shuttle';
 import { StationContentRoute } from '../StationContentRoute';
 import JourneyRoute from '../../containers/JourneyRoute';
