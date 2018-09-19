@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import { PageContentRoute } from '../PageContentRoute';
-import { NavRoute } from '../NavRoute';
+import { Routes } from '../Routes';
 import Fetch from '../../containers/Fetch';
 
 class App extends Component {
@@ -10,8 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Fetch />
-        <NavRoute />
-        <PageContentRoute />
+        <Routes />
       </div>
     );
   }
