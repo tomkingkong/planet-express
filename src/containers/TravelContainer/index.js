@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { array, object } from 'prop-types';
 import { connect } from 'react-redux';
 
-import { handleScroll } from '../../utilities/ScrollAnimate';
 import './Travel.css';
+import { handleScroll } from '../../utilities/ScrollAnimate';
 import DestinationCard from '../DestinationCard';
 
 export class TravelContainer extends Component {

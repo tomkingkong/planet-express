@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 import './Technologies.css';
 import { TechnologyContent } from '../../components/TechnologyContent';
-
 import { handleScroll } from '../../utilities/ScrollAnimate';
 
 export class TechnologiesContainer extends Component {
