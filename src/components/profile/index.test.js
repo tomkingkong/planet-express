@@ -13,7 +13,7 @@ describe('profile component', () => {
     const mockFn = jest.fn();
     const history = { goBack: mockFn };
     const wrapper = shallow(<Profile history={history}/>);
-    wrapper.find('.profile__back_btn').simulate('click');
+    wrapper.find('button').simulate('click');
     expect(mockFn).toHaveBeenCalled();
   });
 });
