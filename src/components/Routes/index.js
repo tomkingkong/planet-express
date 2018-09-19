@@ -16,7 +16,7 @@ export const Routes = () => {
     <div>
       <Route path='/' 
         render={({ location, history }) => 
-        (location.pathname !== '/profile') && <Footer history={history} />} />
+          (location.pathname !== '/profile') && <Footer history={history} />} />
       <Route exact path='/' component={PreLaunchNav} />
       <Route exact path='/launch' component={Shuttle} />
       <Route exact path='/profile' component={Profile} />
