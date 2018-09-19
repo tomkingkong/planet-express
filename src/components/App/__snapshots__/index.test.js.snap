@@ -6,6 +6,5 @@ exports[`App component should match snapshot 1`] = `
 >
   <Connect(Fetch) />
   <Component />
-  <Component />
 </div>
 `;

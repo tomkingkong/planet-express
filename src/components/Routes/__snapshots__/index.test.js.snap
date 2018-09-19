@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes component should match snapshot 1`] = `
+<div>
+  <Route
+    path="/"
+    render={[Function]}
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/launch"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/profile"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/news"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/ISS"
+  />
+  <Route
+    component={[Function]}
+    path="/ISS/destinations"
+  />
+  <Route
+    component={[Function]}
+    path="/ISS/store"
+  />
+  <Route
+    component={[Function]}
+    path="/journey"
+  />
+</div>
+`;
+
+exports[`Routes component should match snapshot with / path 1`] = `
+<div>
+  <Route
+    path="/"
+    render={[Function]}
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/launch"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/profile"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/news"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/ISS"
+  />
+  <Route
+    component={[Function]}
+    path="/ISS/destinations"
+  />
+  <Route
+    component={[Function]}
+    path="/ISS/store"
+  />
+  <Route
+    component={[Function]}
+    path="/journey"
+  />
+</div>
+`;
+
+exports[`Routes component should match snapshot with /profile path 1`] = `
+<div>
+  <Route
+    path="/"
+    render={[Function]}
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/launch"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/profile"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/news"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/ISS"
+  />
+  <Route
+    component={[Function]}
+    path="/ISS/destinations"
+  />
+  <Route
+    component={[Function]}
+    path="/ISS/store"
+  />
+  <Route
+    component={[Function]}
+    path="/journey"
+  />
+</div>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`JourneyRoute Container should match snapshot with journey 1`] = `
+exports[`Journey Container should match snapshot with journey 1`] = `
 <div
   className="JourneyRoute"
 >
@@ -62,7 +62,7 @@ exports[`JourneyRoute Container should match snapshot with journey 1`] = `
 </div>
 `;
 
-exports[`JourneyRoute Container should match snapshot without journey 1`] = `
+exports[`Journey Container should match snapshot without journey 1`] = `
 <Redirect
   push={false}
   to="/"
