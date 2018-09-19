@@ -1,0 +1,17 @@
+.JourneyRoute {
+  background: url('/images/sky_star2.jpg') repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  height: auto;
+}
+
+.scroll__arrow {
+  color: white;
+  margin: 5rem auto;
+  position: absolute;
+  bottom: 0;
+}
