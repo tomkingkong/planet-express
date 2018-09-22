@@ -11,8 +11,8 @@ export const SpaceStationNav = () => {
     <div className="SpaceStation">
       <div className="station__img" style={stationImgStyle}/>
       <h4 className="station__title">Welcome to the International Space Station</h4>
-      <Link className="station__dest" to='/ISS/destinations'>Take a trip!</Link>
-      <Link className="station__lab" to='/ISS/store'>Visit SpaceLab</Link>
+      <Link className="station__dest" to='/ISS/destinations'>take a trip</Link>
+      <Link className="station__lab" to='/ISS/store'>visit spacelab</Link>
     </div>
   );
 };
