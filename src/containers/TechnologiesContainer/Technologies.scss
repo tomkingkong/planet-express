@@ -8,25 +8,29 @@
 
 .technologies__title {
   color: white;
-  background: rgba(4, 11, 31, 1);
+  background: rgb(18, 25, 45);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 160%;
   text-align: center;
   position: sticky;
   top: 0;
   height: 4rem;
   width: 100%;
   z-index: 9999;
+  font-size: 180%;
   transition: all 0.1s linear;
   h4 {
+    font-family: Trench;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0.25rem 0.25rem 0.14rem #4ca2ed;
     margin: 0;
   }
 }
 
 .smaller {
-  box-shadow: 0 0.1rem 1rem 0.01rem rgba(17, 17, 19, 0.872);
+  box-shadow: 0 0.1rem 1rem 0.01rem rgba(86, 88, 96, 0.872);
   font-size: 100%;
-  height: 2rem;
+  height: 6%;
 }
