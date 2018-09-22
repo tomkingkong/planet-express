@@ -39,22 +39,3 @@
   height: calc(40vh - 2.5rem);
   margin: 0.8rem 0 0 0;
 }
-
-.continue__btn {
-  color: white;
-  cursor: pointer;
-  background: rgba(174, 180, 182, 0.639);
-  border: none;
-  box-shadow: 0rem 0rem 0.9rem 0.01rem rgb(218, 215, 215);
-  font-size: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem;
-}
-.continue__btn:hover {
-  color: rgba(214, 219, 223, 0.639);
-  background: rgba(86, 89, 91, 0.639);
-  box-shadow: 0rem 0rem 0.9rem 0.01rem rgb(86, 89, 91);
-}
