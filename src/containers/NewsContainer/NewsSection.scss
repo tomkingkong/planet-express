@@ -2,16 +2,27 @@
   position: relative;
   overflow: scroll;
   height: calc(100vh - 65px);
-  .news__section__title {
-    color: rgb(244, 243, 242);
-    background: rgba(0, 0, 0, 0.8);
-    background-blend-mode: lighten;
-    position: sticky;
-    top: 0;
-    margin: 0.8rem 0;
-    padding: 0.5rem;
-    text-align: center;
-  }
+}
+.news__section__title {
+  color: rgb(244, 243, 242);
+  background: rgb(18, 25, 45);
+  background-blend-mode: lighten;
+  font-family: Trench;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0.25rem 0.25rem 0.14rem #4ca2ed;
+  text-align: center;
+  top: 0;
+  position: sticky;
+  padding: 0.5rem;
+  margin: 0;
+  transition: all 0.1s linear;
+}
+
+.smaller {
+  box-shadow: 0 0.1rem 1rem 0.01rem rgba(86, 88, 96, 0.872);
+  font-size: 100%;
+  height: 6%;
 }
 
 
