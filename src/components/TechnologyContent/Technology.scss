@@ -1,33 +1,50 @@
 .Technology {
   background: rgba(252, 254, 255, 0.735);
   background-blend-mode: lighten;
-  border-radius: 0.2rem;
+  border-radius: 1rem 0 1rem 0;
   width: 96%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: 0.5rem auto;
-  padding: 1rem;
+  .tech__title {
+    color: rgb(70, 41, 5);
+    font-family: Gruppo, Arial, sans-serif;
+    font-size: 120%;
+    font-weight: 600;
+    text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.495);
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
   .tech__desc {
     color: rgb(235, 247, 252);
-    background: rgba(13, 19, 21, 0.79);
-    box-shadow: inset 0rem -0.1rem 0.5rem 0.1rem #fff;
-    border-radius: 0.5rem;
-    letter-spacing: 2px;
+    background: rgba(87, 85, 106, 0.639);
+    box-shadow: inset 0rem -0.01rem 0.2rem 0.1rem #fff;
+    border-radius: 1rem 0 1rem 0;
     font-size: 90%;
-    padding: 0.8rem;
-    max-height: 10rem;
+    letter-spacing: 1px;
     overflow: scroll;
+    padding: 0.8rem;
+    height: 100%;
+    max-height: 10rem;
   }
-  .tech__title {
-    color: rgb(53, 72, 80);
-    font-size: 120%;
-    margin: 0.5rem 0;
-    text-align: center;
+}
+
+.tech__body {
+  padding: 0 1rem;
+  margin: 0;
+  p {
+    font-family: Gruppo;
+    font-size: 110%;
+    font-weight: 600;
+    margin: 0.2rem 0;
   }
 }
 
 .tech__techTags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   font-size: 50%;
   list-style: none;
@@ -36,7 +53,14 @@
   .tech__tag {
     background: rgba(222, 138, 35, 0.653);
     border-radius: 3rem;
+    box-shadow: 0 0.1rem 0.5rem 0.01rem rgb(182, 182, 182);
     margin: 0.2rem;
     padding: 0.5rem;
   }
+}
+
+.hide {
+  display: none;
+  border-top: 0.1rem solid #000;
+  height: 0;
 }

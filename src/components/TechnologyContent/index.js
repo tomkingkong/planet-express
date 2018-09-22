@@ -16,12 +16,14 @@ export const TechnologyContent = ({
     <article className="Technology">
       <h4 className="tech__title">{title}</h4>
       <p className="tech__desc">{description}</p>
-      <p className="tech__org">
-        Organization: {org}
-      </p>
-      <p className="tech__status">
-        Status: {status}
-      </p>
+      <div className="tech__body">
+        <p className="tech__org">
+          Organization: {org}
+        </p>
+        <p className="tech__status">
+          Status: {status}
+        </p>
+      </div>
       <ul className="tech__techTags">{techTags}</ul>
     </article>
   );
