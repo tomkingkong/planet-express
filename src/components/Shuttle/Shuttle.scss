@@ -7,12 +7,16 @@
   width: 100%;
   .continue_btn {
     color: white;
-    cursor: pointer;
     background: rgba(174, 180, 182, 0.639);
-    border: none;
-    box-shadow: 0rem 0rem 0.9rem 0.01rem rgb(218, 215, 215);
+    border-radius: 5rem;
+    box-shadow: 
+      0rem 0rem 0.9rem 0.01rem rgb(218, 215, 215),
+      inset 0rem -0.01rem 0.5rem 0.01rem rgba(118, 117, 117, 0.79);
+    font-family: Trench;
     font-size: 200%;
-    width: 100%;
+    font-weight: 600;
+    width: 96%;
+    margin: 1rem auto;
     padding: 0.5rem;
   }
   .continue_btn:hover {
@@ -27,7 +31,7 @@
   background-size: cover;
   border: 0.1rem inset rgb(247, 253, 255);
   border-radius: 0.2rem;
-  width: 96%;
+  width: 100%;
   height: 14rem;
   margin: 0 auto;
 }
@@ -36,10 +40,15 @@
   color: white;
   background: rgba(0, 0, 0, 0.42);
   border-radius: 0.2rem;
-  width: 96%;
+  width: 100%;
   padding: 1rem;
-  margin: 1rem auto;
+  margin: 0;
   h4 {
     margin: 0;
+    font-family: Gruppo;
+  }
+  p {
+    font-family: Trench;
+    letter-spacing: 1px;
   }
 }
