@@ -1,11 +1,28 @@
+@font-face {
+  font-family: Gruppo;
+  src: url("../src/fonts/Gruppo.ttf"); }
+
+@font-face {
+  font-family: Gtek;
+  src: url("../src/fonts/Gtek.ttf"); }
+
+@font-face {
+  font-family: Oxin;
+  src: url("../src/fonts/Oxin.ttf"); }
+
+@font-face {
+  font-family: Trench;
+  src: url("../src/fonts/Trench.ttf"); }
+
 * {
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 body {
-  margin: 0;
+  background-image: linear-gradient(-179deg, #4D4E73 0%, #0E1B3B 0%, #8A5547 37%, #5E324C 78%, #0E1B3B 96%);
+  margin: 0 auto;
   padding: 0;
-  background-image: linear-gradient(-179deg, #4D4E73 0%, #0E1B3B 0%, #8A5547 37%, #5E324C 78%, #0E1B3B 96%); }
+  max-width: 500px; }
 
 button {
   cursor: pointer;
