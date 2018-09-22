@@ -20,13 +20,14 @@ export class TravelContainer extends Component {
 
   render() {
     handleScroll('.travel__locations', '.travel__title');
+    const planetsCards = this.displayExoplanets();
     return (
       <div className="Travel">
         <header className="travel__title">
           <h4>Available Destinations</h4>
         </header>
-        <section className="travel__locations">
-          { this.displayExoplanets() }
+        <section className={planetsCards.length ? "travel__locations" : "travel__locations loading"}>
+          { planetsCards }
         </section>
       </div>
     );
