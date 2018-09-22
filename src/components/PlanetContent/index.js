@@ -22,7 +22,7 @@ export const PlanetContent = ({
         <h4 className="planet__title">{name}</h4>
         <p>{numInSystem} planet orbiting star {hostStar}.</p>
         <p>{distance} parsecs from Earth.</p>
-        <p>{yearLength.toFixed(2)} of Earth years.</p>
+        <p>{yearLength.toFixed(2)} to one Earth year.</p>
         <p>Disovered using {discoveryMethod}.</p>
       </div>
     </article>

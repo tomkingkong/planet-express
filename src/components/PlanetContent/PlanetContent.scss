@@ -13,8 +13,17 @@
   width: 70%;
   margin: 1rem auto;
   h4 {
-    margin: 1rem 0 0.5rem 0;
+    font-family: Trench;
     font-size: 140%;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-align: center;
+    margin: 1rem 0 0.5rem 0;
+  }
+  p {
+    font-family: Gruppo;
+    font-size: 110%;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
 }
