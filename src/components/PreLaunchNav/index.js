@@ -7,10 +7,10 @@ export const PreLaunchNav = () => {
   return (
     <div className="preLaunchNav">
       <Link className="launch" to="/Launch">
-        <p>Launch!</p>
+        <p>launch!</p>
       </Link>
       <Link className="news" to="/News">
-        <p>News</p>
+        <p>news</p>
       </Link>
     </div>
   );

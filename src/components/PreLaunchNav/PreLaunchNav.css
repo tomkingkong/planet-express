@@ -1,29 +1,36 @@
 .preLaunchNav {
   display: flex;
   flex-direction: column;
-  top: 0;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  margin: 25% 0 0 0;
-  text-align: right;
+  top: 25%;
   width: 100%; }
 
 .launch,
 .news {
-  color: white;
+  align-self: flex-start;
   display: block;
   background: lightblue;
-  padding: 6rem 1rem 1rem 1rem;
+  color: white;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 0.6rem 0.2rem 1rem 0.01rem rgba(55, 29, 9, 0.824), inset -0.2rem 0.02rem 0.6rem 0.05rem rgba(255, 255, 255, 0.336);
+  text-align: right;
   position: relative;
-  margin: 0.2rem auto;
-  font-size: 160%;
-  text-decoration: none;
-  height: 10rem;
-  width: 100%; }
+  height: 5rem;
+  width: 96%;
+  padding: 6rem 1rem 1rem 1rem;
+  margin: 0.2rem 0; }
   .launch p,
   .news p {
+    color: white;
+    font-family: Gtek;
+    letter-spacing: 1px;
+    font-size: 190%;
+    text-shadow: 0rem 0.3rem 0.6rem #082148;
     position: absolute;
-    top: 50%;
-    left: 70%;
+    top: 55%;
+    left: 78%;
     transform: translate(-70%, -50%); }
 
 .launch:hover,
@@ -33,8 +40,8 @@
 
 .launch {
   background: url("/images/shuttle/shuttle_midflight_stylized_2.png") no-repeat center;
-  background-size: cover; }
+  background-size: 100%; }
 
 .news {
   background: url("/images/news/news_nebula.png") no-repeat center;
-  background-size: cover; }
+  background-size: 108%; }
