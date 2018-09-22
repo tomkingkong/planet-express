@@ -43,8 +43,11 @@ export class DestinationCard extends Component {
         </div>
         <div className="destination__info">
           <h4 className="planet__title">{name}</h4>
-          <p>{distance} parsecs from Earth.</p>
-          <h5>Start your trip!</h5>
+          <p>{distance}&nbsp; 
+            <a href="https://en.wikipedia.org/wiki/Parsec">
+              parsecs</a>  
+          &nbsp;from Earth</p>
+          <h5>start your trip</h5>
         </div>      
       </article>
     );

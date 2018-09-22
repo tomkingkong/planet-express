@@ -1,4 +1,5 @@
 .Destination {
+  align-self: flex-end;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.865);
   background: #1d150b80;
@@ -8,8 +9,8 @@
   justify-content: center;
   position: relative;
   height: 8rem;
-  min-width: 100%;
-  margin: 0.2rem auto;
+  width: 96%;
+  margin: 0.2rem 0;
   padding: 0.6rem;
 }
 
@@ -27,20 +28,32 @@
   h4 {
     border: 0.05rem solid rgba(255, 255, 255, 0.66);
     border-radius: 0.2rem;
-    font-size: 100%;
+    font-family: Trench;
+    font-size: 120%;
     width: 8rem;
     margin: 0 auto 0.4rem auto;
     padding: 0.4rem;
     text-align: center;
   }
   h5 {
-    font-size: 105%;
+    align-self: flex-end;
+    font-family: Gtek;
+    font-size: 80%;
+    letter-spacing: 1px;
     margin: 0.5rem 0;
   }
   p {
-    font-size: 65%;
+    font-family: Gruppo;
+    font-size: 85%;
+    letter-spacing: 1px;
     margin: 0.2rem 0;
     padding: 0;
+    a {
+      font-family: Gruppo;
+      color: white;
+      font-weight: 400;
+      text-decoration: none;
+    }
   }
 }
 
