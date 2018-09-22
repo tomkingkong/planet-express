@@ -10,23 +10,26 @@
   width: 100%; }
   .Arrival .arrival__title {
     color: white;
-    margin: 1rem 0;
-    width: fit-content;
-    position: absolute;
+    font-family: Gtek;
+    letter-spacing: 1px;
     top: 0;
-    z-index: 99999; }
+    position: absolute;
+    z-index: 99999;
+    width: fit-content;
+    margin: 1rem 0; }
 
 .retire_btn {
   display: none;
   color: white;
-  cursor: pointer;
   background: rgba(174, 180, 182, 0.639);
-  border: none;
-  box-shadow: 0rem 0rem 0.9rem 0.01rem #dad7d7;
+  border-radius: 5rem;
+  box-shadow: 0rem 0rem 0.9rem 0.01rem #dad7d7, inset 0rem -0.01rem 0.5rem 0.01rem rgba(118, 117, 117, 0.79);
   position: absolute;
+  font-family: Trench;
+  font-weight: 600;
   font-size: 200%;
-  width: 100%;
-  padding: 0.5rem; }
+  width: 95%;
+  padding: 0 0.6rem; }
 
 .retire_btn:hover {
   color: rgba(214, 219, 223, 0.639);

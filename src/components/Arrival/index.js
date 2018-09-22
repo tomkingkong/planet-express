@@ -9,11 +9,16 @@ export const Arrival = ({
   destination }) => {
   return (
     <article className="Arrival">
-      <h3 className="arrival__title">You have arrived!</h3>
+      <h3 className="arrival__title">
+        you have arrived
+      </h3>
       <div className="space">
         <PlanetContent {...destination} />
       </div>
-      <button className="retire_btn" onClick={() => history.replace('/')}>Click to return Home</button>
+      <button className="retire_btn" 
+        onClick={() => history.replace('/')}>
+        Click to return Home
+      </button>
     </article>
   );
 };
