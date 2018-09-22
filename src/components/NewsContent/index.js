@@ -13,13 +13,15 @@ export const NewsContent = ({
   const imageBackground = {'backgroundImage': `url(${urlToImage})`};
   return (
     <article className="news__article">
-      <div className="news__img" style={imageBackground} />
+      <a href={url} 
+         rel="noopener noreferrer" 
+         target="_blank" >
+        <div className="news__img" style={imageBackground} />
+      </a>
       <div className="news__info">
         <h4 className="news__title">{title}</h4>
         <p className="news__desc">{description}</p>
-        <p className="news__auth">Author: {author}</p>
-        <a className="news__link" href={url} rel="noopener noreferrer" target="_blank">Link to Article</a>
-        <p className="news__publish">{publishedAt}</p>
+        <p className="news__auth">By: {author}</p>
       </div>
     </article>
   );
