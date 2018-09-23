@@ -18,8 +18,8 @@ describe('Travel Container', () => {
       discoveryMethod: 'Radial Velocity'
     }
   ];
-  it('should match snapshot', () => {
-    const wrapper = shallow(<TravelContainer exoplanets={[{}]} history={{}}/>);
+  it('should match snapshot without data', () => {
+    const wrapper = shallow(<TravelContainer exoplanets={[]} history={{}}/>);
     expect(wrapper).toMatchSnapshot();
   });
 
