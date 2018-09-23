@@ -4,7 +4,8 @@ Tired of the same, old daily commute? Take a trip to space!
 Visit one of over 4,000 exoplanets in our galaxy, while learning about other cosmic wonders.  
 Planet Express takes users on a journey into the cosmos, while at the comfort of their own mass transit vehicle.
 
-[Ride today!](http://planet-express.herokuapp.com/)
+[Ride today!](http://planet-express.herokuapp.com/)    
+###### Note: This project is meant to be viewed on mobile.
 
 For this solo project I was tasked with developing an App under three constraints for a User Base, specific API, and Technology. 
 1. Mass Transit Users
