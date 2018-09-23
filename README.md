@@ -1,5 +1,5 @@
-##### Tom King
-#### Planet Express
+#### Tom King
+## Planet Express
 Tired of the same old daily commute? Take a trip to space!
 Planet Express takes users on a journey into the cosmos, 
 while at the comfort of their own mass transit vehicle.
@@ -28,7 +28,7 @@ In order to make a few of the fetch calls, CORS will need to be enabled in your 
 This project was meant to be viewed on mobile, and will look awkward on screens > 500px width.</strong>
 
 
-#### Development
+### Development
 After a day of determining the goals of my app, I worked in Sketch to develop wireframes and a prototype to aid in building out the React components.    
 Wireframes/prototype:   
 [Destination-selections](https://raw.githubusercontent.com/tomkingkong/planet-express/master/public/images/screenshots/planet-express-wireframe-destinations.png)  
