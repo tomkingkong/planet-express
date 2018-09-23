@@ -1,10 +1,10 @@
-#### Tom King
-## Planet Express
+### Tom King
+# Planet Express
 Tired of the same, old daily commute? Take a trip to space!  
 Visit one of over 4,000 exoplanets in our galaxy, while learning about other cosmic wonders.  
 Planet Express takes users on a journey into the cosmos, while at the comfort of their own mass transit vehicle.
 
-[Ride today!](http://planet-express.herokuapp.com/)    
+### [Ride today!](http://planet-express.herokuapp.com/)    
 ###### Note: This project is meant to be viewed on mobile.
 
 For this solo project I was tasked with developing an App under three constraints for a User Base, specific API, and Technology. 
@@ -30,14 +30,14 @@ In order to make a few of the fetch calls, CORS will need to be enabled in your 
 This project was meant to be viewed on mobile, and will look awkward on screens > 500px width.</strong>
 
 
-### Development
+## Development
 After a day of determining the goals of my app, I worked in Sketch to develop wireframes and a prototype to aid in building out the React components.    
 Wireframes/prototype:   
 [Destination-selections](https://raw.githubusercontent.com/tomkingkong/planet-express/master/public/images/screenshots/planet-express-wireframe-destinations.png)  
 [Journey](https://raw.githubusercontent.com/tomkingkong/planet-express/master/public/images/screenshots/planet-express-wireframe-journey.png)   
 [User-Profile](https://raw.githubusercontent.com/tomkingkong/planet-express/master/public/images/screenshots/planet-express-wireframe-userprofile.png)   
 
-### Examples
+## Examples
 #### Destination Selection
 
 <img src="https://raw.githubusercontent.com/tomkingkong/planet-express/master/public/images/screenshots/planet-express_Planet_Selection.gif" width="300"/>
