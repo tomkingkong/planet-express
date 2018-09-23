@@ -8,7 +8,7 @@ import Journey from '../../containers/Journey';
 import { SpaceStationNav } from '../SpaceStationNav';
 import { PreLaunchNav } from '../PreLaunchNav';
 import { Shuttle } from '../Shuttle';
-import { Profile } from '../Profile';
+import { UserProfile } from '../UserProfile';
 import { Footer } from '../Footer';
 
 export const Routes = () => {
@@ -19,7 +19,7 @@ export const Routes = () => {
           (location.pathname !== '/profile') && <Footer history={history} />} />
       <Route exact path='/' component={PreLaunchNav} />
       <Route exact path='/launch' component={Shuttle} />
-      <Route exact path='/profile' component={Profile} />
+      <Route exact path='/profile' component={UserProfile} />
       <Route exact path='/news' component={NewsContainer} />
       <Route exact path='/ISS' component={SpaceStationNav} />
       <Route path="/ISS/destinations" component={TravelContainer} />
