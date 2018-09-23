@@ -1,11 +1,12 @@
 #### Tom King
 ## Planet Express
-Tired of the same old daily commute? Take a trip to space!
-Planet Express takes users on a journey into the cosmos, 
-while at the comfort of their own mass transit vehicle.
+Tired of the same, old daily commute? Take a trip to space!  
+Visit one of over 4,000 exoplanets in our galaxy, while learning about other cosmic wonders.  
+Planet Express takes users on a journey into the cosmos, while at the comfort of their own mass transit vehicle.
 
-For this solo project I was tasked with developing an App under three, near random constraints  
-for a User, API, and Technology; which were:
+[Ride today!](http://planet-express.herokuapp.com/)
+
+For this solo project I was tasked with developing an App under three constraints for a User Base, specific API, and Technology. 
 1. Mass Transit Users
 2. NASA API
 3. jQuery
