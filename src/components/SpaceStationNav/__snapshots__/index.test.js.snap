@@ -22,14 +22,14 @@ exports[`SpaceStationNav component should match snapshot 1`] = `
     replace={false}
     to="/ISS/destinations"
   >
-    Take a trip!
+    take a trip
   </Link>
   <Link
     className="station__lab"
     replace={false}
     to="/ISS/store"
   >
-    Visit SpaceLab
+    visit spacelab
   </Link>
 </div>
 `;

@@ -22,10 +22,16 @@ exports[`DestinationCard Container should match snapshot 1`] = `
     </h4>
     <p>
       far
-       parsecs from Earth.
+       
+      <a
+        href="https://en.wikipedia.org/wiki/Parsec"
+      >
+        parsecs
+      </a>
+       from Earth
     </p>
     <h5>
-      Start your trip!
+      start your trip
     </h5>
   </div>
 </article>

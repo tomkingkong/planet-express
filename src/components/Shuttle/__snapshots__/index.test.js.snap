@@ -23,7 +23,9 @@ exports[`Shuttle component should match snapshot 1`] = `
     <p
       className="shuttle__desc"
     >
-      Launching from Cape Canaveral on DATE, headed for rendezvous with the Internation Space Station.
+      Launching from Cape Canaveral on 
+        Sun Sep 23 2018, 
+        headed for rendezvous with the Internation Space Station.
     </p>
   </div>
   <button

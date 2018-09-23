@@ -10,16 +10,20 @@ exports[`TechnologyContent component should match snapshot 1`] = `
   <p
     className="tech__desc"
   />
-  <p
-    className="tech__org"
+  <div
+    className="tech__body"
   >
-    Organization: 
-  </p>
-  <p
-    className="tech__status"
-  >
-    Status: 
-  </p>
+    <p
+      className="tech__org"
+    >
+      Organization: 
+    </p>
+    <p
+      className="tech__status"
+    >
+      Status: 
+    </p>
+  </div>
   <ul
     className="tech__techTags"
   >

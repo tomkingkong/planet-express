@@ -7,7 +7,7 @@ exports[`News Container should match snapshot 1`] = `
   <h1
     className="news__section__title"
   >
-    Out of this world News!
+    SpaceNews
   </h1>
   <Component
     key="0"

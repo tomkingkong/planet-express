@@ -4,11 +4,25 @@ exports[`Footer component should match snapshot 1`] = `
 <div
   className="Footer"
 >
+  <Link
+    className="profile__btn"
+    replace={false}
+    to="/profile"
+  >
+    Profile
+  </Link>
+</div>
+`;
+
+exports[`Footer component should match snapshot with backbutton 1`] = `
+<div
+  className="Footer"
+>
   <button
     className="footer__back"
     onClick={[Function]}
   >
-    Back
+    BACK
   </button>
   <Link
     className="profile__btn"

@@ -4,14 +4,19 @@ exports[`NewsContent component should match snapshot 1`] = `
 <article
   className="news__article"
 >
-  <div
-    className="news__img"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
+  <a
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="news__img"
+      style={
+        Object {
+          "backgroundImage": "url(undefined)",
+        }
       }
-    }
-  />
+    />
+  </a>
   <div
     className="news__info"
   >
@@ -24,18 +29,8 @@ exports[`NewsContent component should match snapshot 1`] = `
     <p
       className="news__auth"
     >
-      Author: 
+      By: 
     </p>
-    <a
-      className="news__link"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Link to Article
-    </a>
-    <p
-      className="news__publish"
-    />
   </div>
 </article>
 `;

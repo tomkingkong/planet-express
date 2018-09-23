@@ -10,7 +10,7 @@ exports[`PreLaunchNav component should match snapshot 1`] = `
     to="/Launch"
   >
     <p>
-      Launch!
+      launch!
     </p>
   </Link>
   <Link
@@ -19,7 +19,7 @@ exports[`PreLaunchNav component should match snapshot 1`] = `
     to="/News"
   >
     <p>
-      News
+      news
     </p>
   </Link>
 </div>
