@@ -1,8 +1,9 @@
-### Tom King
-# Planet Express
+## Planet Express
 Tired of the same, old daily commute? Take a trip to space!  
 Visit one of over 4,000 exoplanets in our galaxy, while learning about other cosmic wonders.  
 Planet Express takes users on a journey into the cosmos, while at the comfort of their own mass transit vehicle.
+
+Created by Tom King.
 
 ### [Ride today!](http://planet-express.herokuapp.com/)    
 ###### Note: This project is meant to be viewed on mobile.
@@ -16,22 +17,17 @@ I have also included Hubble API and NewsAPI, for visuals and added information.
 
 
 ## Set Up
-
-Clone this project
-
-Run `npm install` from the root directory
-
-Run `npm start` and visit localhost:3000 in your browser
-
+Clone this project  
+Run `npm install` from the root directory  
+Run `npm start` and visit localhost:3000 in your browser  
 You can run tests with `npm test`
 
 <strong>Note*  
-In order to make a few of the fetch calls, CORS will need to be enabled in your browser.  
-This project was meant to be viewed on mobile, and will look awkward on screens > 500px width.</strong>
+In order to make a few of the fetch calls, CORS will need to be enabled in your browser.</strong>
 
 
 ## Development
-After a day of determining the goals of my app, I worked in Sketch to develop wireframes and a prototype to aid in building out the React components.    
+After determining the goals of this app, I worked in Sketch to develop wireframes and a prototype to aid in building out the React components.    
 Wireframes/prototype:   
 [Destination-selections](https://raw.githubusercontent.com/tomkingkong/planet-express/master/public/images/screenshots/planet-express-wireframe-destinations.png)  
 [Journey](https://raw.githubusercontent.com/tomkingkong/planet-express/master/public/images/screenshots/planet-express-wireframe-journey.png)   
