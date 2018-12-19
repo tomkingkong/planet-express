@@ -19,7 +19,7 @@ for visuals and added information.
 Built as a mobile application.  
 
 ## Tech Stack  
-React / Router / Redux  
+React / Router / Redux / Enzyme / Jest
 
 ## Set Up
 Clone this project  
