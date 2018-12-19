@@ -8,18 +8,18 @@ Created by Tom King.
 ### [Ride today!](http://planet-express.herokuapp.com/)    
 ###### Note: This project is meant to be viewed on mobile.
 
-A solo project developed under three constraints:
-User Base:    Mass Transit Users
-API:          NASA API
-Technology:   jQuery
+A solo project developed under three constraints:   
+User Base:    Mass Transit Users  
+API:          NASA API  
+Technology:   jQuery  
   
-Also included are the Hubble API and NewsAPI, 
+Also included are the Hubble API and NewsAPI,   
 for visuals and added information.
 
-Built as a mobile application.
+Built as a mobile application.  
 
-## Tech Stack
-React / Router / Redux
+## Tech Stack  
+React / Router / Redux  
 
 ## Set Up
 Clone this project  
